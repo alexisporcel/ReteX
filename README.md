@@ -4,7 +4,7 @@
 
 
 
-Projet de plateforme numérique de fiches d’enseignements proposées par un chef d’agrès, pour les chefs d’agrès. Différent des fiches d’enseignements, il s’agirait avant tout d’étendre et de faire profiter à tous les chefs d’agrès de la Brigade l’expérience d’une intervention vécue par un CA en particulier. 
+Projet de plateforme numérique de fiches d’enseignements proposées par les chef d’agrès, pour les chefs d’agrès. Différent des fiches d’enseignements, il s’agirait avant tout d’étendre et de faire profiter à tous les chefs d’agrès de la Brigade l’expérience d’une intervention vécue par un CA en particulier. 
 
 
 Cette plateforme proposerait, si possible, plusieurs sections : 
