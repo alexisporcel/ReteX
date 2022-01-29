@@ -1,0 +1,22 @@
+body
+{
+	font-family: Times New Roman, Arial, sans-serif;
+	text-align: justify;
+	background-image: url(../resources/backgrounds/bg_fire_1.png);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+}
+h1, h2
+{
+	font-family: Impact, Arial, sans-serif;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+}
+
+img
+{
+	float : top;
+	width : 10vw;
+}
