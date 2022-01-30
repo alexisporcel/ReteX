@@ -1,7 +1,7 @@
 body{
 	font-family: Impact, Arial, sans-serif;
 	text-align: justify;
-	background-image: url(../resources/backgrounds/bg_fire_1.png);
+	background-image: url(../resources/backgrounds/bgfiremodif.png);
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
 	overflow: hidden;
@@ -16,6 +16,7 @@ h1{
 	font-weight: bold;
 	font-style: italic;
 	font-size: 5vw;
+	font-family : Impact, sans-serif ; 
 }
 .container{
 	display: flex;
@@ -40,6 +41,8 @@ h1{
     box-shadow: black 3px -3px;
     cursor: pointer;
     transition-duration: 0.2s;
+	font-family: Impact, sans-serif;
+	font-size: 1.3em ;
 }
 .tabButton:hover {
     box-shadow: none;
@@ -55,4 +58,7 @@ h1{
 
 p{
 	margin: 15vh 10vw;
+	color : black ;
+	margin : auto ;
+	width : 50% ; 
 }
