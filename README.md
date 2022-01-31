@@ -1,7 +1,7 @@
 # Retex
 ## Projet Retex BSPP X21
 
-#https://alexisporcel.github.io/ReteX/
+https://alexisporcel.github.io/ReteX/
 
 
 Il s'agirait d'une plateforme numérique de fiches d’enseignements proposées par les chef d’agrès polytechniciens, pour les chefs d’agrès polytechniciens.
