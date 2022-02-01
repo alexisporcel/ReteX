@@ -1,4 +1,6 @@
 function tab(event) {
-	console.log(event.target.name);
-	window.location.assign(`./pages/${event.target.name}.html`)
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (page=='index.html') {window.location.assign(`./pages/${event.target.name}.html`)}
+	else{window.location.assign(`./${event.target.name}.html`)}
 }
