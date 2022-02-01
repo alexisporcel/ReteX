@@ -4,7 +4,7 @@ body{
 	background-color: white ;
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 header{
@@ -88,19 +88,15 @@ p{
 	margin : auto ;
 }
 
-
 footer{
 	display: flex ;
 	align-items: baseline;
 	justify-content: space-around;
-
-
 	position: absolute;
 	bottom: 10px ;
 	width: 100% ;
 	height : 40px ;
 	background : linear-gradient( 0deg, #F1FF1A, #FDFDFD ) ;
-
 }
 
 #homebutton {
