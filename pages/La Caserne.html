@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../style/main.css">
+	<link rel="stylesheet" type="text/css" href="../style/fireStation.css">
 	<title>Fiches vie en CS</title>
 </head>
 <body>
@@ -21,12 +22,45 @@
 	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 </nav>
 
-<footer>
+<div class="fireStationParent">
+	<div class="fireStation">
+		<div class="grid-item" onmouseover="room(event)" name="instruc">Salle d'instruction</div>
+		<div class="grid-item" onmouseover="room(event)" name="chambres">Chambres</div>
+		<div class="grid-item" onmouseover="room(event)" name="pvo">PVO</div>
+		<div class="grid-item" onmouseover="room(event)" name="porte">Porte</div>
+		<div class="grid-item" onmouseover="room(event)" name="remise">Remise</div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="grid-item" onmouseover="room(event)" name="foyer">Foyer</div>
+		<div class="grid-item" onmouseover="room(event)" name="ssh">Bureau SSH</div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="grid-item" onmouseover="room(event)" name="mess">Mess</div>
+		<div class="grid-item" onmouseover="room(event)" name="officiers">Bureau officiers</div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="grid-item" onmouseover="room(event)" name="ref">Ref</div>
+		<div class="grid-item" onmouseover="room(event)" name="adu">Bureau ADU</div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="grid-item" onmouseover="room(event)" name="sport">Salle de sport</div>
+	</div>
+</div>
+<!-- <footer>
 	<p>Une envie de contribuer à ReteX ? Contactez-nous ! <p/>
 	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
 	<p> Crée par les X21 BSPP </p>
-</footer>
+</footer> -->
 
 </body>
 <script src="../scripts/main.js" charset="utf-8"></script>
+<script src="../scripts/fireStation.js" charset="utf-8"></script>
 </html>

@@ -8,8 +8,9 @@ body{
 	background-color: white ;
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
-	overflow: auto;
 	background-color: #CACACA ;
+	overflow: auto;
+	overflow-x: hidden;
 }
 
 header{
@@ -17,11 +18,12 @@ header{
 	height: auto ;
 	top : 0 ;
 }
+
 nav{
 	background-color: #CACACA ;
 	top : 0px ;
-
 }
+
 img{
 	float : top;
 	width : 10vw;
