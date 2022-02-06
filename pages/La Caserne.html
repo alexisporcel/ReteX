@@ -24,37 +24,49 @@
 
 <div class="fireStationParent">
 	<div class="fireStation">
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="instruc">Salle d'instruction</div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="chambres">Chambres</div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="BSP">PVO</div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="porte">Porte</div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="remise">Remise</div>
-		<div class="null" onmouseover="room(event)" onclick="fiche(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="foyer">Foyer</div>
-		<div class="grid-item" onmouseover="room(event)"onclick="fiche(event)" name="ssh">Bureau SSH</div>
-		<div class="null" onmouseover="room(event)" onclick="fiche(event)"name="null"></div>
-
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="mess">Mess</div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="officiers">Bureau officiers</div>
-		<div class="null" onmouseover="room(event)" onclick="fiche(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="ref">Ref</div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="adu">Bureau ADU</div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event)" onclick="fiche(event)" name="sport">Salle de sport</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="instruc">Salle d'instruction</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="chambres">Chambres</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="pvo">PVO</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="porte">Porte</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="remise">Remise</div>
+		<div class="null" name="null"></div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="foyer">Foyer</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="ssh">Bureau SSH</div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="mess">Mess</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="officiers">Bureau officiers</div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="ref">Ref</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="adu">Bureau ADU</div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="sport">Salle de sport</div>
 	</div>
 </div>
+
+<div id='card' class="card" name='card_instruc'>Résumé infos instruc</div>
+<div id='card' class="card" name='card_chambres'>Résumé infos Chambres</div>
+<div id='card' class="card" name='card_pvo'>Résumé infos PVO</div>
+<div id='card' class="card" name='card_porte'>Résumé infos Porte</div>
+<div id='card' class="card" name='card_remise'>Résumé infos Remise</div>
+<div id='card' class="card" name='card_foyer'>Résumé infos Foyer</div>
+<div id='card' class="card" name='card_ssh'>Résumé infos SSH</div>
+<div id='card' class="card" name='card_mess'>Résumé infos Mess</div>
+<div id='card' class="card" name='card_officiers'>Résumé infos Bureau Officiers</div>
+<div id='card' class="card" name='card_ref'>Résumé infos Ref</div>
+<div id='card' class="card" name='card_adu'>Résumé infos Bureau ADU</div>
+<div id='card' class="card" name='card_sport'>Résumé infos Salle de sport</div>
 
 <footer>
 	<p>Une envie de contribuer à ReteX ? Contactez-nous ! <p/>
