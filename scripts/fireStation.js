@@ -8,6 +8,12 @@ function room(event, state) {
 	if (state=='out') {roomCards[0].style.visibility = 'hidden'}
 }
 
+function fiche(event) {
+	var name = event.target.getAttribute('name');
+	window.location.assign(`./caserne/${name}.html`)
+}
+
+
 document.addEventListener('mousemove', function(e) {
 	let cards = document.getElementsByClassName('card');
 	for (var i = 0; i < cards.length; i++){
@@ -20,7 +26,6 @@ document.addEventListener('mousemove', function(e) {
 		card.style.left = left + 'px';
 	}
 });
-
 document.addEventListener('scroll',function(e) {
 	let cards = document.getElementsByClassName('card');
 	for (var i = 0; i < cards.length; i++) {
