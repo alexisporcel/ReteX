@@ -1,10 +1,9 @@
 .fireStationParent{
 	width: 100%;
-	margin: 30px;
+	margin: 30px 0;
 }
 
 .fireStation{
-	cursor: pointer;
 	max-width: 1300px;
 	width: 850px;
 	height: auto;
@@ -12,15 +11,28 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 100px);
 	justify-content: center;
-	grid-gap: 10px
+	align-items: center;
+	grid-gap: 10px;
 }
 
 .grid-item{
+	cursor: pointer;
 	width: 100px;
 	height: 100px;
 	background: #333;
+	color: white;
+	font-family: Impact, sans-serif;
+	line-height: 100px;
+	text-align: center;
 }
-
 div[name="remise"]{
 	width: 210px;
+}
+
+.card{
+	position:absolute;
+	height:auto;
+	width:auto;
+	background-color: green;
+	visibility: hidden;
 }
