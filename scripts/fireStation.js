@@ -13,7 +13,6 @@ function fiche(event) {
 	window.location.assign(`./caserne/${name}.html`)
 }
 
-
 document.addEventListener('mousemove', function(e) {
 	let cards = document.getElementsByClassName('card');
 	for (var i = 0; i < cards.length; i++){
