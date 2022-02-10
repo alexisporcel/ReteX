@@ -20,11 +20,11 @@ header{
 nav{
 	background-color: #CACACA ;
 	top : 0px ;
-
 }
 img{
 	float : top;
 	width : 10vw;
+	cursor: pointer;
 }
 
 h1{
@@ -34,6 +34,7 @@ h1{
 	font-style: italic;
 	font-size: 5vw;
 	font-family : Impact, sans-serif ;
+	cursor: pointer;
 }
 
 .container{
@@ -45,7 +46,7 @@ h1{
 #tabContainer{
 	height: 10vh;
 }
-.tabButton{
+.tabButton, .tableButton{
 	position: relative;
 	width: 20%;
 	height: 100%;
@@ -55,14 +56,14 @@ h1{
     border-radius: 5px;
     outline: none;
     color: white;
-    background: linear-gradient(45deg, #FE0000, #FE0000);
+	background: linear-gradient(45deg, #FE0000, #ba0d00);
     box-shadow: black 3px -3px;
     cursor: pointer;
     transition-duration: 0.2s;
 	font-family: Impact, sans-serif;
 	font-size: 1.3em ;
 }
-.tabButton:hover {
+.tabButton:hover, .tableButton:hover {
     box-shadow: none;
     transform: translate3d(3px,-3px,0);
     transition-delay: 0;
@@ -70,7 +71,7 @@ h1{
     transition-property: all;
     transition-timing-function: line;
 }
-.tabButton:active {
+.tabButton:active, .tableButton:active {
     background: linear-gradient(45deg, #85262e, #501527);
 }
 
@@ -88,6 +89,10 @@ section{
 #casque{
 	width: auto ;
 	height: 40em ;
+}
+#pdf{
+	width: auto;
+	height: 4em;
 }
 
 p{
@@ -124,4 +129,8 @@ footer{
     transition-duration: 0.2s;
 	font-family: Impact, sans-serif;
 	font-size: 1.0em ;
+}
+
+#contact{
+	cursor: pointer;
 }

@@ -4,16 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../style/main.css">
+	<link rel="stylesheet" type="text/css" href="../style/BSP.css">
 	<title>BSP</title>
 </head>
 <body>
 <header class="container">
 	<figure> <img id="logoX" src="../resources/images/logoX.png"></figure>
-	<h1>BSP</h1>
+	<h1 onclick="home()">BSP</h1>
 	<figure> <img id="logoBSPP" src="../resources/images/logoBSPP.png"></figure>
 </header>
-
-
 
 <nav class="container" id="tabContainer">
 	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
@@ -21,17 +20,48 @@
 	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
 	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 </nav>
+<nav id='pdf_container'>
+	<a href="#"><img id="pdf" src="../resources/images/pdf_logo.png"></a>
+	<a href="#"><img id="pdf" src="../resources/images/pdf_logo.png"></a>
+</nav>
+<div class='container'>
+	<div class='glossary'>
+		<h2>Glossaire</h2>
+		<div class='container' id='buttonContainer'>
+			<button class='tableButton' type="button" name="sort">trier par</button>
+			<button class='tableButton' type="button" name="show">afficher</button>
+		</div>
+		<div class='container'>
+			<table>
+				<tbody>
+		            <tr>
+		                <td>AVP</td>
+		                <td>Accident sur voie publique</td>
+		            </tr>
+		            <tr>
+		                <td>OAP</td>
+		                <td>Oedème aigu du poumon</td>
+		            </tr>
+		            <tr>
+		                <td>ACR</td>
+		                <td>Arrêt cardio respiratoire</td>
+		            </tr>
+		            <tr>
+		                <td>FPT</td>
+		                <td>Fourgon pompe tonne</td>
+		            </tr>
+		        </tbody>
+			</table>
+		</div>
+	</div>
+</div>
 
 
 <footer>
-	<p>Une envie de contribuer à ReteX ? Contactez-nous ! <p/>
-	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<!-- <button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button> -->
 	<p> Crée par les X21 BSPP </p>
 </footer>
-
-	</div>
-</footer>
-
 
 </body>
 <script src="../scripts/main.js" charset="utf-8"></script>

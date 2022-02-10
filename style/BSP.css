@@ -1,0 +1,24 @@
+.glossary{
+	padding: 5vh 5vh;
+	width: 50vw;
+}
+h2{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	margin: 0;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2vw;
+	font-family : Impact, sans-serif ;
+}
+#buttonContainer{
+	padding: 5vh
+}
+table{
+	border-collapse: collapse
+}
+th,td{
+	border: 1px solid black;padding: 10px 20px;
+}
