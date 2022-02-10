@@ -2,7 +2,23 @@
 	padding: 5vh 5vh;
 	width: 50vw;
 }
-h2{
+.glossary .glossaryOptions{
+	background: linear-gradient(45deg, #FE0000, #ba0d00);
+	border-radius: 5px;
+}
+.glossary nav ul li a{
+	text-decoration:none;
+	color: white;
+	font-size: 1.3em;
+	font-family : Impact, sans-serif ;
+}
+.glossary nav ul li ul a{
+	text-decoration:none;
+	color: black;
+	font-size: 1em;
+	font-family : Impact, sans-serif ;
+}
+.glossary h2{
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -13,6 +29,63 @@ h2{
 	font-size: 2vw;
 	font-family : Impact, sans-serif ;
 }
+.glossary nav{
+	width: 50%;
+	margin: 0 auto;
+}
+.glossary nav ul{
+	list-style-type: none;
+	padding: 0;
+}
+.glossary nav ul li{
+	float: left;
+	width: 45%;
+	margin-right: 5%;
+	text-align: center;
+	position: relative;
+	border-style: none;
+    border-radius: 5px;
+}
+.glossary nav ul:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.glossary nav a{
+	display: block;
+	padding: 10px 0px;
+	cursor: pointer;
+}
+.glossary .under{
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+.glossary nav > ul li:hover .under{
+	display: block;
+	border-style: none;
+	border-radius: 5px;
+}
+.glossary .under li{
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+.glossary .under a{
+	padding: 10px;
+	border-bottom: none;
+	cursor: pointer;
+}
+.glossary .under a:hover{
+	border-bottom: none;
+	background-color: rgba(150, 150, 150, 0.2);
+}
+
+
+
 #buttonContainer{
 	padding: 5vh
 }

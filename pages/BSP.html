@@ -27,30 +27,60 @@
 <div class='container'>
 	<div class='glossary'>
 		<h2>Glossaire</h2>
-		<div class='container' id='buttonContainer'>
-			<button class='tableButton' type="button" name="sort">trier par</button>
-			<button class='tableButton' type="button" name="show">afficher</button>
-		</div>
+		<nav>
+			<ul>
+				<li class='glossaryOptions'><a>Trier par</a>
+					<ul class='under'>
+						<li><a onclick="sort(event)" name='alpha'>Ordre alphabétique</a></li>
+						<li><a onclick="sort(event)" name='theme'>Thème</a></li>
+					</ul>
+				</li>
+				<li class='glossaryOptions'><a>Afficher</a>
+					<ul class='under'>
+						<li><a onclick="show(event)" name='tout'>Tout</a></li>
+						<li><a onclick="show(event)" name='sap'>Les mots de sap</a></li>
+						<li><a onclick="show(event)" name='pecch'>Les mots du PECCH</a></li>
+						<li><a onclick="show(event)" name='sarce'>Les mots de sarce</a></li>
+						<li><a onclick="show(event)" name='moyen'>Les moyens</a></li>
+						<li><a onclick="show(event)" name='sav'>Le SAV</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
 		<div class='container'>
-			<table>
-				<tbody>
-		            <tr>
-		                <td>AVP</td>
-		                <td>Accident sur voie publique</td>
-		            </tr>
-		            <tr>
-		                <td>OAP</td>
-		                <td>Oedème aigu du poumon</td>
-		            </tr>
-		            <tr>
-		                <td>ACR</td>
-		                <td>Arrêt cardio respiratoire</td>
-		            </tr>
-		            <tr>
-		                <td>FPT</td>
-		                <td>Fourgon pompe tonne</td>
-		            </tr>
-		        </tbody>
+			<table id='table'>
+	            <tr class='sav'>
+	                <td>AVP</td>
+	                <td>Accident sur voie publique</td>
+	            </tr>
+	            <tr class='sav'>
+	                <td>OAP</td>
+	                <td>Oedème aigu du poumon</td>
+	            </tr>
+	            <tr class='sav'>
+	                <td>ACR</td>
+	                <td>Arrêt cardio respiratoire</td>
+	            </tr>
+	            <tr class='moyen'>
+	                <td>FPT</td>
+	                <td>Fourgon pompe tonne</td>
+	            </tr>
+				<tr class='moyen'>
+	                <td>VSAV</td>
+	                <td>Véhicule de secours et d'assistance à victimes</td>
+	            </tr>
+				<tr class='moyen'>
+	                <td>BEA</td>
+	                <td>Bras élévateur aérien</td>
+	            </tr>
+				<tr class='moyen'>
+	                <td>AR</td>
+	                <td>Ambulance de réanimation</td>
+	            </tr>
+				<tr class='sarce'>
+	                <td>BOTE</td>
+	                <td>Bien orienté dans le temps et l'espace</td>
+	            </tr>
 			</table>
 		</div>
 	</div>
@@ -60,9 +90,10 @@
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<!-- <button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button> -->
-	<p> Crée par les X21 BSPP </p>
+	<p id='signature'> Crée par les X21 BSPP </p>
 </footer>
 
 </body>
 <script src="../scripts/main.js" charset="utf-8"></script>
+<script src="../scripts/BSP.js" charset="utf-8"></script>
 </html>

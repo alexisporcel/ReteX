@@ -134,3 +134,9 @@ footer{
 #contact{
 	cursor: pointer;
 }
+#location{
+	text-align: center;
+}
+#signature{
+	text-align: end;
+}
