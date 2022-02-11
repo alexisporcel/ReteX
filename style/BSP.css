@@ -25,7 +25,6 @@
 	color: black;
 	margin: 0;
 	font-weight: bold;
-	font-style: italic;
 	font-size: 2vw;
 	font-family : Impact, sans-serif ;
 }
@@ -83,15 +82,30 @@
 	border-bottom: none;
 	background-color: rgba(150, 150, 150, 0.2);
 }
-
-
-
 #buttonContainer{
 	padding: 5vh
 }
 table{
-	border-collapse: collapse
+	border-collapse: collapse;
+	font-family : Impact, sans-serif ;
+
 }
 th,td{
 	border: 1px solid black;padding: 10px 20px;
+}
+.searchBar{
+	border-style: none;
+	padding: 10px;
+	letter-spacing: 1px;
+	outline: none;
+	font-family : Impact, sans-serif ;
+
+	  /* border-radius: 25px; */
+	  /* background-color: #22a6b3; */
+	padding-right: 40px;
+	background-color: transparent;
+	border-bottom:1px solid rgba(255,255,255,.5);
+	/* color:#fff; */
+	font-size: 18px;
+	font-weight: 100;
 }

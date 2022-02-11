@@ -10,6 +10,7 @@ body{
 	background-attachment: fixed;
 	overflow: auto;
 	background-color: #CACACA ;
+	min-height: 100vh;
 }
 
 header{
@@ -111,6 +112,7 @@ footer{
 	height : 40px ;
 	background : linear-gradient( 0deg, #F1FF1A, #CACACA ) ;
 	font-size: 0.8em ;
+	border-collapse: collapse;
 }
 
 #homebutton {

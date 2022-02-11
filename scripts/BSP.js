@@ -4,7 +4,6 @@ function sort(event){
 	if (name=='alpha') {sortTableAlpha()}
 	else {sortTableClass()}
 }
-
 function sortTableAlpha() {
   var table = document.getElementById("table");
   var rows, switching, i, x, y, shouldSwitch;
@@ -54,12 +53,66 @@ function sortTableClass(){
 		table = document.getElementById("table"),
 	   	rows = table.rows,
 	   	classes = [];
-		newTable = document.createElement('table')
+		// newTable = document.createElement('table')
 
-   // build an array from the 2nd item in the class list on each row
-	for (var i = 0; i < table.rows.length; i++) {
-		classes.push(table.rows[i].className)
-	}
-	classes.sort();
+   	// build an array from the 2nd item in the class list on each row
+	for (var i = 0; i < table.rows.length; i++) {classes.push(table.rows[i].className)}
+	classes.sort()
+	console.log(classes);
+
+	// for (var i = classes.length - 1; i>0; i--) {
+	// 	console.log(i, classes[i]);
+	// 	var resu = null,
+	// 	 	j = 0
+	// 	while (resu == null) {
+	// 		console.log(table.rows[i].className, resu);
+	// 		if (table.rows[i].className.includes(classes[i])){resu=table.rows[i]}
+	// 		j++
+	// 	}
+	// 	tampon = table.rows[0]
+	// 	table.rows[0] = table.rows[i]
+	// 	table.rows[i] = tampon
+	// }
+
 	colorLines()
+}
+function searchBar() {
+  	var input, filter, table, tr, td, i, txtValue;
+  	inputs = document.getElementsByClassName("searchBar");
+	input = inputs[0]
+  	filter = input.value.toUpperCase();
+  	table = document.getElementById("table");
+  	tr = table.getElementsByTagName("tr");
+	resu = null
+  	for (i = 0; i < tr.length; i++) {
+    	td = tr[i].getElementsByTagName("td")[0];
+    	if (td) {
+	      	txtValue = td.textContent || td.innerText;
+	      	if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				tr[i].style.display = ""
+				resu = 'something'}
+			else {tr[i].style.display = "none"}
+    	}
+		if (resu==null){
+			td = tr[i].getElementsByTagName("td")[1];
+			if (td) {
+		      	txtValue = td.textContent || td.innerText;
+		      	if (txtValue.toUpperCase().indexOf(filter) > -1) {tr[i].style.display = ""}
+				else {tr[i].style.display = "none"}
+	    	}
+		}
+  }
+}
+function show(event){
+	var name = event.target.getAttribute('name');
+	table = document.getElementById("table");
+	if (name=='tout'){
+		for (var i = 0; i < table.rows.length; i++) {table.rows[i].style.display = ""}
+	}
+	else{
+		for (var i = 0; i < table.rows.length; i++) {
+			if (table.rows[i].className.includes(name)) {table.rows[i].style.display = ""}
+			else{table.rows[i].style.display = "none"}
+		}
+	}
 }
