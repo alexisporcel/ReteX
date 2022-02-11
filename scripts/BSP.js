@@ -1,3 +1,4 @@
+sortTableAlpha()
 
 function sort(event){
 	var name = event.target.getAttribute('name');
