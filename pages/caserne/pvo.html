@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../style/main.css">
+	<link rel="stylesheet" type="text/css" href="../../style/ficheCS.css">
 	<title>PVO</title>
 </head>
 <body>
 	<header class="container">
 		<a href="../chicAlaJone.html"> <img id="logoX" src="../../resources/images/logoX.png"></a>
-		<h1>PVO</h1>
+		<h1>La Caserne</h1>
 		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../../resources/images/logoBSPP.png"></a>
 	</header>
 	<nav class="container" id="tabContainer">
@@ -18,6 +18,43 @@
 		<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
 		<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 	</nav>
+
+	<h2> Le Poste de Veille Opérationnelle </h2>
+<div class="fiche_caserne">
+	<section class = "texte_fiche">
+		<p> Le PVO, pour poste de veille opérationnelle, est le centre névralgique de la caserne.
+			Tu y trouves le stationnaire, toujours face à son ordinateur, qui a un œil attentif sur les interventions en cours du secteur. </br>
+C’est au PVO que tu dois te rendre quand tu décales, pour récupérer ton ordre de départ, ta radio, et faire le point avec le stationnaire (ou le conducteur pour certaines casernes) sur le plan mural afin de prendre connaissance du trajet qui mène à l’intervention.
+De retour d’intervention, c’est au PVO que tu donnes ton message de rentrée et rédiges ton rapport. </br> </p>
+
+<ol id='rentree'> <p> Ton message de rentrée ressemble à ceci : </p>
+	<li> Actions menées par les SP (tous les moyens de la BSPP engagés sur l'intervention doivent y figurer). Une liste non exhaustive d’actions possibles: bilan, relevage, ecg, O2, mceva, déclaration de refus de transport, immobilisation générale, attelle, kits biologiques renforcés, contact à la coordination médicale.
+Exemple : VSAV 465 CHPT : Bilan Contact à la coordination médicale Électrocardiogramme
+	      AR 66 CHPT : Prise en charge médicale </li>
+		<li> Identité de la victime et destination. L’ordre de la rentrée est le suivant: Nom Prénom, Age, Sexe, Nationalité, Catégorisation (UR, UA, DCD) , engin transporteur, destination
+Exemple : Dupont Marie 57 ans féminin urgence absolue transportée par AR 66 CHPT vers CH Bichat </li>
+	<li> Moyens de secours privés utilisés (exemple : ATSU) </li>
+	<li> Matériel laissé sur place (Surtout pour l’incendie) </li>
+	<li> Ronde et relève (Surtout pour l’incendie) </li>
+	<li> Cause supposée. Une liste non exhaustive de causes possibles: malaise, maladie, chute, intoxication, accident de circulation, impotence, parturiente </li>
+	<li> Dégâts causés par les SP (exemple : divers vêtements) </li>
+	<li> Difficultés rencontrées par les SP. Typiquement, si tu mets plus de 10min à te rendre sur une intervention qui se situe sur ton secteur,
+		tu dois te justifier: élongation secteur, travaux, circulation difficile… </li>
+	<li> Signalement BPREV et services publiques </li>
+</ol>
+</section>
+<figure>
+	<img src="../../resources/images/pvo.jpg" alt="poste de veille opérationnel" id='pvo'>
+	<title> Le poste de veille opérationnel </title>
+</figure>
+</div>
+<footer>
+	<p>Une envie de contribuer à ReteX ? Contactez-nous ! <p/>
+	<button id='homebutton' class='tabButton' onclick="window.location.assign(`../../index.html`)">Retourner à la page d'accueil</button>
+	<p> Crée par les X21 BSPP </p>
+
+</footer>
 </body>
 <script src="../../scripts/main.js" charset="utf-8"></script>
+
 </html>
