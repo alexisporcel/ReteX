@@ -10,9 +10,9 @@
 <body>
 
 <header class="container">
-	<figure> <img id="logoX" src="../resources/images/logoX.png"></figure>
-	<h1>La Caserne</h1>
-	<figure> <img id="logoBSPP" src="../resources/images/logoBSPP.png"></figure>
+	<a href="pages/chicAlaJone.html"> <img id="logoX" src="../resources/images/logoX.png"></a>
+	<h1 onclick='home()'>La Caserne</h1>
+	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../resources/images/logoBSPP.png"></a>
 </header>
 
 <nav class="container" id="tabContainer">
@@ -24,34 +24,34 @@
 
 <div class="fireStationParent">
 	<div class="fireStation">
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="instruc">Salle d'instruction</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="chambres">Chambres</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="pvo">PVO</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="porte">Porte</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="remise">Remise</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="instruc">Salle d'instruction</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="chambres">Chambres</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="pvo">PVO</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="porte">Porte</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="remise">Remise</div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="foyer">Foyer</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="ssh">Bureau SSH</div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="mess">Mess</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="officiers">Bureau officiers</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="foyer">Foyer</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="ssh">Bureau SSH</div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="ref">Ref</div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="adu">Bureau ADU</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="mess">Mess</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="officiers">Bureau officiers</div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
 		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" name="sport">Salle de sport</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="ref">Ref</div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="adu">Bureau ADU</div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="sport">Salle de sport</div>
 	</div>
 </div>
 

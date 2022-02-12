@@ -26,7 +26,6 @@ img{
 	float : top;
 	width : 10vw;
 }
-
 h1{
 	text-align: center;
 	color: black;
@@ -34,8 +33,8 @@ h1{
 	font-style: italic;
 	font-size: 5vw;
 	font-family : Impact, sans-serif ;
+	cursor: pointer;
 }
-
 .container{
 	display: flex;
 	justify-content: space-evenly;
@@ -84,18 +83,15 @@ section{
 	align-items: center;
 
 }
-
 #casque{
 	width: auto ;
 	height: 40em ;
 }
-
 p{
 	width : 55% ;
 	margin : auto ;
 	margin : 5em ;
 }
-
 footer{
 	display: flex ;
 	align-items: center;
@@ -107,7 +103,6 @@ footer{
 	background : linear-gradient( 0deg, #F1FF1A, #CACACA ) ;
 	font-size: 0.8em ;
 }
-
 #homebutton {
 	position: relative;
 	width: 25%;
@@ -124,4 +119,13 @@ footer{
     transition-duration: 0.2s;
 	font-family: Impact, sans-serif;
 	font-size: 1.0em ;
+}
+footer #contact{
+	cursor: pointer;
+}
+footer #location{
+	text-align: center;
+}
+footer #signature{
+	text-align: end;
 }
