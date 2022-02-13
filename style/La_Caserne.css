@@ -1,0 +1,88 @@
+.fireStationParent{
+	height: 115vh;
+	width: 100%;
+	margin: 30px 0;
+}
+.fireStation{
+	max-width: 1300px;
+	width: 850px;
+	height: auto;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 100px);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+}
+.grid-item{
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	background: #333;
+	color: white;
+	font-family: Impact, sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-item[name=""]{
+	line-height: 100px;
+}
+div[name="remise"]{
+	width: 210px;
+}
+.card{
+	position:absolute;
+	width: 200px;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+	background: #060c21;
+	display: none;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.card:before,
+.card:after{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: white;
+	z-index: -1;
+	background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.card:after{
+	filter: blur(40px);
+}
+.card .glass{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+}
+.card .content{
+	padding: 0;
+	margin: 0;
+	color: white;
+	/* font-family: Impact, sans-serif; */
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.content h3{}
+.content p{
+	position: relative;
+	left: 5%;
+	padding: 0;
+	margin: 0;
+	margin-top: 20%;
+	width: 90%;
+	text-align: center;
+}

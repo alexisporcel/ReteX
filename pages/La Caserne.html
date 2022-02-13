@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../style/main.css">
-	<link rel="stylesheet" type="text/css" href="../style/fireStation.css">
+	<link rel="stylesheet" type="text/css" href="../style/La_Caserne.css">
 	<title>La Caserne</title>
 </head>
 <body>
@@ -29,51 +29,123 @@
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="pvo">PVO</div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="porte">Porte</div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="remise">Remise</div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" name="null"></div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="foyer">Foyer</div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="ssh">Bureau SSH</div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="mess">Mess</div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="officiers">Bureau officiers</div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="ref">Ref</div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="adu">Bureau ADU</div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
-		<div class="null" onmouseover="room(event)" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
+		<div class="null" name="null"></div>
 		<div class="grid-item" onmouseover="room(event, 'on')" onmouseout="room(event, 'out')" onclick="fiche(event)" name="sport">Salle de sport</div>
 	</div>
 </div>
 
-<div id='card' class="card" name='card_instruc'>Résumé infos instruc</div>
-<div id='card' class="card" name='card_chambres'>Résumé infos Chambres</div>
-<div id='card' class="card" name='card_pvo'>Résumé infos PVO</div>
-<div id='card' class="card" name='card_porte'>Résumé infos Porte</div>
-<div id='card' class="card" name='card_remise'>Résumé infos Remise</div>
-<div id='card' class="card" name='card_foyer'>Résumé infos Foyer</div>
-<div id='card' class="card" name='card_ssh'>Résumé infos SSH</div>
-<div id='card' class="card" name='card_mess'>Résumé infos Mess</div>
-<div id='card' class="card" name='card_officiers'>Résumé infos Bureau Officiers</div>
-<div id='card' class="card" name='card_ref'>Résumé infos Ref</div>
-<div id='card' class="card" name='card_adu'>Résumé infos Bureau ADU</div>
-<div id='card' class="card" name='card_sport'>Résumé infos Salle de sport</div>
-<!-- <footer>
-	<p>Une envie de contribuer à ReteX ? Contactez-nous ! <p/>
-	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
-	<p> Crée par les X21 BSPP </p>
-</footer> -->
+<div class='card' name='card_pvo'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Poste de Veille Opérationnelle</h3>
+		<p>Là où arrivent les ordres de départ <br> Le Stationnaire est le pax (souvent première classe ou caporal) qui s'occupe de recevoir les ordres de départ et d'appeler les engins de la caserne.</p>
+	</div>
+</div>
+<div class='card' name='card_instruc'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Salle d'instruction</h3>
+		<p>Là où le chef d'agrès donne des cours de secourisme.</p>
+	</div>
+</div>
+<div class='card' name='card_chambres'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Chambres</h3>
+		<p>La Chambre V1 est la chambre dans laquelle l'équipage du VSAV qui est le premier départ dort.</p>
+	</div>
+</div>
+<div class='card' name='card_porte'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Ceci est une porte</h3>
+	</div>
+</div>
+<div class='card' name='card_remise'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>La Remise</h3>
+		<p>C'est là où sont garés les engins. Dans beaucoup de casernes, c'est là où se trouve la planche.</p>
+	</div>
+</div>
+<div class='card' name='card_foyer'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Le foyer</h3>
+		<p>C'est la salle de détente, là où tu paieras moulte fois ta canuche.</p>
+	</div>
+</div>
+<div class='card' name='card_ssh'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Bureau SSH</h3>
+		<p>Là où sont entreposés les tenues de feu et les draps. </p>
+	</div>
+</div>
+<div class='card' name='card_mess'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Le Mess</h3>
+		<p>Là où mangent les sous-officiers et les officiers de la caserne</p>
+	</div>
+</div>
+<div class='card' name='card_officiers'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Le bureau des officiers</h3>
+		<p>Là où tu auras accès à un ordinateur.</p>
+	</div>
+</div>
+<div class='card' name='card_ref'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Le réfectoire</h3>
+		<p>Là où tu boufferas avec ton équipage pendant tes gardes.</p>
+	</div>
+</div>
+<div class='card' name='card_adu'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>Bureau ADU</h3>
+		<p>Là où se trouve l'adjudant d'unité.</p>
+	</div>
+</div>
+<div class='card' name='card_sport'>
+	<div class='glass'></div>
+	<div class='content'>
+		<h3>La salle de sport</h3>
+		<p>L'endroit où tu découvriras des douleurs encore inconnues</p>
+	</div>
+</div>
+
+<footer>
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<!-- <button id='homebutton' class='tabButton' onclick='home()'>Retourner à la page d'accueil</button> -->
+	<p id='signature'> Crée par les X21 BSPP </p>
+</footer>
 
 </body>
 <script src="../scripts/main.js" charset="utf-8"></script>
-<script src="../scripts/fireStation.js" charset="utf-8"></script>
+<script src="../scripts/La_Caserne.js" charset="utf-8"></script>
 </html>

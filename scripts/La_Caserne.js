@@ -4,8 +4,8 @@ var lastMouseYpos = 0
 function room(event, state) {
 	var name = event.target.getAttribute('name');
 	let roomCards = document.getElementsByName('card_' + name)
-	if (state=='on') {roomCards[0].style.visibility = 'visible'}
-	if (state=='out') {roomCards[0].style.visibility = 'hidden'}
+	if (state=='on') {roomCards[0].style.display = 'flex'}
+	if (state=='out') {roomCards[0].style.display = 'none'}
 }
 
 function fiche(event) {
