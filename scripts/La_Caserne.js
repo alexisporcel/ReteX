@@ -36,3 +36,15 @@ document.addEventListener('scroll',function(e) {
 		card.style.left = left + 'px';
 	}
 })
+
+function last_dead_changer() {
+	table = document.getElementsByClassName('wikitable')
+	last_dead_name = table.rows[0]
+}
+
+
+fetch("https://fr.wikipedia.org/wiki/Brigade_de_sapeurs-pompiers_de_Paris#Morts_en_intervention").then(function(resp) {
+    console.log(resp);
+    return resp.json()
+}).then(function(data) {
+    console.log(data);})

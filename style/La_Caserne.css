@@ -32,6 +32,19 @@
 div[name="remise"]{
 	width: 210px;
 }
+.alarm{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#fire_alarm_img{
+	width : 60%;
+	cursor: pointer;
+}
+#morts_au_feu_img{
+	width: 100%;
+	cursor: pointer;
+}
 .card{
 	position:absolute;
 	width: 200px;
@@ -76,8 +89,8 @@ div[name="remise"]{
 	justify-content: center;
 	align-items: center;
 }
-.content h3{}
-.content p{
+.card .content h3{}
+.card .content p{
 	position: relative;
 	left: 5%;
 	padding: 0;
@@ -85,4 +98,32 @@ div[name="remise"]{
 	margin-top: 20%;
 	width: 90%;
 	text-align: center;
+}
+
+.morts_au_feu_content{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+figure{
+	margin: 0;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+figure img{
+	width: 30vw;
+	margin-top: 10vh;
+}
+.morts_au_feu_content{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 400px);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+}
+p{
+	width: 92%;
+	margin: 5%;
+	font-family: Impact, sans-serif;
 }
