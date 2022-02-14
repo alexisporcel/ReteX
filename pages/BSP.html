@@ -9,8 +9,8 @@
 </head>
 <body>
 <header class='container'>
-	<a href="pages/chicAlaJone.html"> <img id="logoX" src="../resources/logo/logoX.png"></a>
-	<div class='title'><h1 onclick='home()'>BSP</h1></div> 
+	<a href="./chicAlaJone.html"> <img id="logoX" src="../resources/logo/logoX.png"></a>
+	<div class='title'><h1 onclick='home()'>BSP</h1></div>
 	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../resources/logo/logoBSPP.png"></a>
 </header>
 
@@ -21,8 +21,14 @@
 	<button class='tabButton' type='button' onclick='tab(event)' name='La Radio'>La Radio</button>
 </nav>
 <nav id='pdf_container'>
-	<a href='#'><img id='pdf' src='../resources/logo/pdf_logo.png'></a>
-	<a href='#'><img id='pdf' src='../resources/logo/pdf_logo.png'></a>
+	<div class='pdf'>
+		<a href='#'><img id='pdf_img' src='../resources/logo/pdf_logo.png'></a>
+		<p class='pdf_title' href='#'>BSP 2002.2</p>
+	</div>
+	<div class='pdf'>
+		<a href='#'><img id='pdf_img' src='../resources/logo/pdf_logo.png'></a>
+		<p class='pdf_title' href='#'>BSP 115.3</p>
+	</div>
 </nav>
 <hr>
 <div class='container'>
@@ -48,6 +54,7 @@
 							<li><a onclick='show(event)' name='sarce'>Les mots de sarce</a></li>
 							<li><a onclick='show(event)' name='moyen'>Les moyens</a></li>
 							<li><a onclick='show(event)' name='sav'>Le SAV</a></li>
+							<li><a onclick='show(event)' name='memo'>Les moyens mnémotechniques</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -59,13 +66,13 @@
 	                <td>AVP</td>
 	                <td>Accident sur voie publique</td>
 	            </tr>
-	            <tr class='sav pecch'>
-	                <td>OAP</td>
-	                <td>Oedème aigu du poumon</td>
-	            </tr>
 	            <tr class='sav sap'>
 	                <td>ACR</td>
 	                <td>Arrêt cardio respiratoire</td>
+	            </tr>
+				<tr class='sav pecch'>
+	                <td>OAP</td>
+	                <td>Oedème aigu du poumon</td>
 	            </tr>
 	            <tr class='moyen pecch'>
 	                <td>FPT</td>
@@ -83,10 +90,499 @@
 	                <td>AR</td>
 	                <td>Ambulance de réanimation</td>
 	            </tr>
-				<tr class='sarce'>
+				<tr class='sav sarce'>
 	                <td>BOTE</td>
 	                <td>Bien orienté dans le temps et l'espace</td>
 	            </tr>
+				<tr class='moyen sap'>
+					<td>SAMU</td>
+					<td>Structure d'aide médicale urgente</td>
+				</tr>
+				<tr class='moyen sap'>
+					<td>SMUR</td>
+					<td> Structure mobile d'urgence et de réanimation</td>
+				</tr>
+				<tr class='moyen sap'>
+					<td> ATSU </td>
+					<td> Association départementale des transports sanitaires urgents</td>
+				</tr>
+				<tr class='sap'>
+					<td> SU </td>
+					<td> Structure des urgences </td>
+				</tr>
+				<tr class='sap'>
+					<td> PAPS </td>
+					<td> Point d'alerte et de premier secours </td>
+				</tr>
+				<tr class='sap'>
+					<td> DPS </td>
+					<td> Dispositif prévisionnel de secours </td>
+				</tr>
+				<tr class='sap'>
+					<td> SNA </td>
+					<td> Signal national d'alerte </td>
+				</tr>
+				<tr class='sav sap pecch'>
+					<td> COS </td>
+					<td> Commandant des opérations de secours (premier SP présent sur intervention) </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> DASRI </td>
+					<td> Déchets d'activité de soins à risques infectieux </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> DAOM </td>
+					<td> Déchets assimilables à des ordures ménagères </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> DAOM </td>
+					<td> Déchets assimilables à des ordures ménagères </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> OPTC </td>
+					<td> Objets piquants tranchants coupants</td>
+				</tr>
+				<tr class='sav sap'>
+					<td> GRV </td>
+					<td> Grand récipient vrac </td>
+				</tr>
+				<tr class='sap'>
+					<td> AEV </td>
+					<td> Accident d'exposition au risque viral </td>
+				</tr>
+				<tr class='sap'>
+					<td> NRBC </td>
+					<td> Nucléaire Radiologique Biologique Chimique </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> TRC </td>
+					<td> Temps de recoloration cutannée </td>
+				</tr>
+				<tr class='memo sap'>
+					<td> FARS </td>
+					<td> Fréquence | amplitude | régularité | saturation 02</td>
+				</tr>
+				<tr class='memo sap'>
+					<td> FRP </td>
+					<td> Fréquence | régularité | pression artérielle </td>
+				</tr>
+				<tr class='memo sap'>
+					<td> COMA </td>
+					<td> Couverture | O2 | Masque Haute concentration | Acuvac</td>
+				</tr>
+				<tr class='memo sap'>
+					<td> PQRST </td>
+					<td> Provoqué par | Qualité | Région | Sévérité | Temps </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> PCI </td>
+					<td> Perte de connaissance initiale </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> PCS </td>
+					<td> Perte de connaissance secondaire </td>
+				</tr>
+				<tr class='memo sap'>
+					<td> MHTA </td>
+					<td> Maladie | Hospitalisation | Traitements | Allergie </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> DGT7 </td>
+					<td> Digital Touch 7 (non du modèle du multiparamétrique ou T7 ou DSA ou Gameboy) </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> DSA </td>
+					<td> Défibrilateur Semi Automatique </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> ACR </td>
+					<td> Arrêt cardio respiratoire </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> PRV </td>
+					<td> Point de regroupement des victimes </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> PMA </td>
+					<td> Point médical avancé</td>
+				</tr>
+				<tr class='memo sap'>
+					<td> PSEA </td>
+					<td> Proche | sécurisé | ergonomique | accessible </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> MCO </td>
+					<td> Main courante opérationnelle </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> ZDI </td>
+					<td> Zone de déploiement initial </td>
+				</tr>
+				<tr class='pecch'>
+					<td> OGC </td>
+					<td> Officier de garde compagnie (voir cas OGC) </td>
+				</tr>
+				<tr class='sav sap pecch'>
+					<td> EPI </td>
+					<td> Equipement de protection individuelle </td>
+				</tr>
+				<tr class='moyen'>
+					<td> UMH </td>
+					<td> Unité mobile hospitalière </td>
+				</tr>
+				<tr class='pecch'>
+					<td> PCCC </td>
+					<td> Poste de commandement et de contrôle </td>
+				</tr>
+				<tr class='pecch'>
+					<td> PCE </td>
+					<td> Poste de commande et de l'énergie </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> VPS </td>
+					<td> Véhicule de protection et de signalisation </td>
+				</tr>
+				<tr class='pecch'>
+					<td> TLD </td>
+					<td> Tenue légère de décontamination </td>
+				</tr>
+				<tr class='pecch'>
+					<td> Altair 4X </td>
+					<td> Détecteur CO présent dans la VL OGC</td>
+				</tr>
+				<tr class='pecch'>
+					<td> CSO </td>
+					<td> Centre de suivi opérationnel </td>
+				</tr>
+				<tr class='pecch'>
+					<td> PVO </td>
+					<td> Poste de veille opérationnelle </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> MEA </td>
+					<td> Moyen élévateur aérien </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> EPA </td>
+					<td> Echelle pivotante automatique </td>
+				</tr>
+
+				<tr class='moyen pecch'>
+					<td> EPAN </td>
+					<td> Echelle pivotante automatique à nacelle </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> VL </td>
+					<td> Véhicule léger </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> FPTL </td>
+					<td> Fourgon pompe tonne léger </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> PSE </td>
+					<td> Premier secours évacuation (ou PS) </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> FA </td>
+					<td> Fourgon d'appui </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> FPTL </td>
+					<td> Fourgon pompe tonne léger </td>
+				</tr>
+				<tr class='pecch'>
+					<td> PVU </td>
+					<td> Plan de violence urbaine </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> EP </td>
+					<td> Engin pompe </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> CD </td>
+					<td> Camion de désincarcération </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> DN </td>
+					<td> Départ normal </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> VLI </td>
+					<td> Véhicule léger infirmier </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> TNM </td>
+					<td> Transport non médicalisé </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> OPJ </td>
+					<td> Officier de police judiciaire </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> APJ </td>
+					<td> Agent de police judiciaire </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> GIR </td>
+					<td> Groupe iso ressources (autonomie de la victime)</td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> AVC </td>
+					<td> Accident vasculaire cérébral </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> AIT </td>
+					<td> Accident ischémique transitoire</td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> GEU </td>
+					<td> Grossesse extra utérine </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> OPJ </td>
+					<td> Officier de police judiciaire </td>
+				</tr>
+				<tr class='sav sarce'>
+					<td> BMS4M </td>
+					<td> Bonne motricité sensibilité des 4 membres (à ne pas utiliser sur la fiche bilan) </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> AVP </td>
+					<td> Accident sur voie publique </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> TC </td>
+					<td> Traumatisme cranien </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> DL </td>
+					<td> Douleur (à ne pas utiliser sur la fiche bilan) </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> UA </td>
+					<td> Urgence absolue </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> UR </td>
+					<td> Urgence relative </td>
+				</tr>
+				<tr class='sav sarce'>
+					<td> FDRCV </td>
+					<td> Facteur de risque cardiovasculaire (à ne pas utiliser sur la fiche bilan) </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> SAV </td>
+					<td> Secours à victimes </td>
+				</tr>
+				<tr class='pecch'>
+					<td> ADAGIO </td>
+					<td> Application de diffusion de l'alerte et de gestion informatisée des opérations </td>
+				</tr>
+				<tr class='pecch'>
+					<td> ADOSSPP </td>
+					<td> Association des orphelins des sapeurs-pompiers de Paris</td>
+				</tr>
+				<tr class='pecch'>
+					<td> ADU </td>
+					<td> Adjudant d'unité </td>
+				</tr>
+				<tr class='pecch'>
+					<td> ANTARES </td>
+					<td> Adaptation nationale des transmissions aux risques et aux secours </td>
+				</tr>
+				<tr class='pecch'>
+					<td> ARI </td>
+					<td> Appareil respiratoire isolant </td>
+				</tr>
+				<tr class=''>
+					<td> BEP </td>
+					<td> Bureau études et prospectives </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> BER </td>
+					<td> Boîtier émission réception (radio présente dans les engins) </td>
+				</tr>
+				<tr class=''>
+					<td> BORH </td>
+					<td> Bureau organisation des ressources humaines </td>
+				</tr>
+				<tr class=''>
+					<td> BOSI </td>
+					<td> Bureau organisation des systèmes d'information </td>
+				</tr>
+				<tr class='sap'>
+					<td> BSPP </td>
+					<td> Brigade de Sapeurs-Pompiers de Paris</td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> HTA </td>
+					<td> Hyper tension artérielle </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CA </td>
+					<td> Chef d'agrès </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CCL </td>
+					<td> Compagnie de commandement et de logistique </td>
+				</tr>
+				<tr class=''>
+					<td> CCPM </td>
+					<td> Contrôle de la condition physique du militaire (des tests de sport) </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CR </td>
+					<td> Compte rendu </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CO </td>
+					<td> Centre opérationnel </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> PCU </td>
+					<td> Pansement compréssif d'urgence </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CRAC </td>
+					<td> Camionnette de réserve d'air comprimé </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CRI </td>
+					<td> Compte rendu d'intervention </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CMA </td>
+					<td> Code motif d'alerte </td>
+				</tr>
+				<tr class='moyen pecch'>
+					<td> PC </td>
+					<td> Poste de commandement </td>
+				</tr>
+				<tr class='pecch'>
+					<td> CTA </td>
+					<td> Centre de traitement des appels (le 18/112) </td>
+				</tr>
+				<tr class='sav sap'>
+					<td> DAE </td>
+					<td> Défibrillateur automatisé externe </td>
+				</tr>
+				<tr class='pecch'>
+					<td> ETARE </td>
+					<td> Etablissement répertorié </td>
+				</tr>
+				<tr class=''>
+					<td> GAS </td>
+					<td> Groupement des appuis et de secours </td>
+				</tr>
+				<tr class='pecch'>
+					<td> GHV </td>
+					<td> Gilet haute visibilité </td>
+				</tr>
+				<tr class=''>
+					<td> GFIS </td>
+					<td> Groupement de formation instruction et de secours </td>
+				</tr>
+				<tr class=''>
+					<td> GIS </td>
+					<td> Groupement d'incendie et de secours </td>
+				</tr>
+				<tr class='pecch'>
+					<td> GRIMP </td>
+					<td> Groupe d'intervention en milieu périlleux </td>
+				</tr>
+				<tr class='sarc'>
+					<td> IGH </td>
+					<td> Immeuble de grande hauteur </td>
+				</tr>
+				<tr class=''>
+					<td> JSPP </td>
+					<td> Jeune sapeur pompier de Paris</td>
+				</tr>
+				<tr class=''>
+					<td> SPV </td>
+					<td> Sapeur pompier volontaire </td>
+				</tr>
+				<tr class=''>
+					<td> SPV </td>
+					<td> Sapeur pompier volontaire </td>
+				</tr>
+				<tr class='sav moyen pecch'>
+					<td> MTNM </td>
+					<td> Moyen de transport non médicalisé </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> OMP </td>
+					<td> Opérateur mains propres </td>
+				</tr>
+				<tr class='sav pecch'>
+					<td> OMS </td>
+					<td> Opérateur mains sales </td>
+				</tr>
+				<tr class='sap'>
+					<td> OPEX </td>
+					<td> Opération extérieure </td>
+				</tr>
+				<tr class='sap'>
+					<td> PAX </td>
+					<td> Personnel </td>
+				</tr>
+				<tr class='sap pecch'>
+					<td> PEC </td>
+					<td> Peloton d'élèves caporaux (formation pour devenir caporal) </td>
+				</tr>
+				<tr class='sap pecch'>
+					<td> PECCH </td>
+					<td> Peloton d'élèves caporaux-chefs (formation pour devenir caporal-chef, formation suivie par les X) </td>
+				</tr>
+				<tr class=''>
+					<td> PP </td>
+					<td> Préfecture de police </td>
+				</tr>
+				<tr class='sap pecch'>
+					<td> SR </td>
+					<td> Secours routier </td>
+				</tr>
+				<tr class='pecch'>
+					<td> PRA </td>
+					<td> Plan rouge alpha </td>
+				</tr>
+				<tr class='pecch'>
+					<td> RETEX </td>
+					<td> Retour d'expérience </td>
+				</tr>
+				<tr class='sap pecch'>
+					<td> RCP </td>
+					<td> Réanimation cardio pulmonaire </td>
+				</tr>
+				<tr class='pecch'>
+					<td> RSMU </td>
+					<td> Recherche et secours en milieu urbain</td>
+				</tr>
+				<tr class='pecch'>
+					<td> SIGTAO </td>
+					<td> Système de gestion du temps et de l'activité opérationnels </td>
+				</tr>
+				<tr class='pecch'>
+					<td> SINUS </td>
+					<td> Système d'information numérique standardisé </td>
+				</tr>
+				<tr class='pecch'>
+					<td> SIOP </td>
+					<td> Section d'information opérationnelle et prévisionnelle </td>
+				</tr>
+				<tr class='sap'>
+					<td> SP </td>
+					<td> Sapeurs-pompier </td>
+				</tr>
+				<tr class='pecch'>
+					<td> STRADA </td>
+					<td> Système de transmissions de données alphanumériques (Le bipper qui nous fait décaler)</td>
+				</tr>
+				<tr class='sap'>
+					<td> TIOR </td>
+					<td> Technique d'intervention opérationnelles rapprochées (c'est la castagne) </td>
+				</tr>
 			</table>
 		</div>
 	</div>
@@ -96,7 +592,7 @@
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<!-- <button id='homebutton' class='tabButton' onclick='home()'>Retourner à la page d'accueil</button> -->
-	<p id='signature'> Crée par les X21 BSPP </p>
+	<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
 </footer>
 
 </body>

@@ -94,7 +94,7 @@ button:hover {
 button:active {
     background: linear-gradient(45deg, #85262e, #501527);
 }
-section{
+#presentation{
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-evenly;
@@ -102,13 +102,23 @@ section{
 	align-items: center;
 
 }
-figure{
+#presentation figure{
     margin-top: 10vh;
 }
-#casque{
+#presentation figure #casque{
 	width: 60vw ;
 }
-p{
+#X21Presentation figure{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#X21Presentation figure #carteX21{
+    width: 45vw;
+}
+#presentation p{
 	width : 55% ;
 	margin-right : 5%;
 }
@@ -148,4 +158,5 @@ footer #location{
 }
 footer #signature{
 	text-align: end;
+    cursor: pointer;
 }

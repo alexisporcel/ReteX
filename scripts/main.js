@@ -23,3 +23,13 @@ function sendMail(){
 	let body = ''
 	window.open(`mailto:clement.patrizio@gmail.com?subject=${subject}&body=${body}`);
 }
+
+function chicAlaJone(){
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (page=='index.html') {window.location.assign(`./pages/chicAlaJone.html`)}
+	else {
+		if (path.includes('caserne')) {window.location.assign(`.././chicAlaJone.html`)}
+		else {window.location.assign(`./chicAlaJone.html`)}
+	}
+}

@@ -88,9 +88,6 @@ h1{
 .tabButton:active, .tableButton:active {
     background: linear-gradient(45deg, #85262e, #501527);
 }
-
-
-
 section{
 	display: flex;
 	flex-direction: row-reverse;
@@ -98,11 +95,6 @@ section{
 	height : auto ;
 	align-items: center;
 
-}
-
-#casque{
-	width: auto ;
-	height: 40em ;
 }
 #pdf{
 	width: auto;
@@ -112,48 +104,6 @@ section{
 p{
 	width : 90% ;
 }
-
-footer{
-	display: flex ;
-	align-items: center;
-	justify-content: space-around;
-	position: relative;
-	bottom: 0px;
-	width: 100% ;
-	height : 40px ;
-	background : linear-gradient( 0deg, #F1FF1A, #CACACA ) ;
-	font-size: 0.8em ;
-}
-
-#homebutton {
-	position: relative;
-	width: 25%;
-	height: 90%;
-    justify-content: center;
-    align-items: center;
-    border-style: none;
-    border-radius: 3px;
-    outline: none;
-    color: white;
-    background: linear-gradient(45deg, #FE0000, #FE0000);
-    box-shadow: black 3px -3px;
-    cursor: pointer;
-    transition-duration: 0.2s;
-	font-family: Impact, sans-serif;
-	font-size: 1.0em ;
-}
-
-#contact{
-	cursor: pointer;
-}
-#location{
-	text-align: center;
-}
-#signature{
-	text-align: end;
-}
-
-
 .fiche_caserne {
 	font-family: Candara, sans-serif;
 	font-weight: bold;
@@ -161,19 +111,19 @@ footer{
 	flex-direction: row ;
 	width : 100% ;
 	height : auto ;
-
-
+	margin-bottom: 5vh;
 }
-
+#sitesBody .fiche_caserne{
+	margin-top: 5vh;
+	width: 70vw;
+}
 #pvo {
 	width: auto ;
 	height: 25em ;
 }
-
 .texte_fiche {
 	display : flex ;
 	flex-direction: column;
-	align-items: center ;
 	height : auto ;
 	border-style: solid ;
 	padding : 1em ;
@@ -183,5 +133,4 @@ footer{
 
 ol li {
 	margin : 0 15px 15px 0 ;
-
 }

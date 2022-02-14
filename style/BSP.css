@@ -1,9 +1,26 @@
 
 #pdf_container{
 	padding: 5vh 5vh;
+	max-width: 1300px;
+	width: 850px;
+	height: auto;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 100px);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	grid-gap: 10px;
 }
-#pdf{
+#pdf_img{
 	width: 5vw;
+}
+.pdf_title{
+	width: auto;
+	font-size: 1em;
+	font-family : Impact, sans-serif ;
+	cursor: pointer;
+	margin: 0
 }
 hr{
 	width: 60%;
