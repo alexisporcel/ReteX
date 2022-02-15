@@ -11,9 +11,9 @@ function tab(event) {
 function home(){
 	var path = window.location.pathname;
 	var page = path.split('/').pop();
-	if (page=='index.html') {window.location.assign(`./index.html`)}
+	if (page=='index.html') {window.location.assign(`/index.html`)}
 	else {
-		if (path.includes('caserne')) {window.location.assign(`../../index.html`)}
+		if (path.includes('caserne')) {window.location.assign(`/index.html`)}
 		else {window.location.assign(`../index.html`)}
 	}
 }
