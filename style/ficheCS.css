@@ -41,15 +41,13 @@ h1{
 	 color: #242300;
 	 font-weight: bold;
 	 font-style: italic;
-	 font-size: 5vw;
+	 font-size: 2vw;
 	 font-family : Impact, sans-serif ;
 	 cursor: pointer;
-	 border-style: solid;
-	 border-color : #fff700 ;
-	 background-color: #bdba00 ;
+	 text-decoration: underline;
+	 text-decoration-color: #ebdf00 ;
 	 width : 80% ;
-	 margin : 3% 10% 3% 10%  ;
-	 justify-content:
+	 margin : 2% 0% 0% 2%  ;
  }
 .container{
 	display: flex;
@@ -117,7 +115,7 @@ p{
 	margin-top: 5vh;
 	width: 70vw;
 }
-#pvo {
+.photo_fiche {
 	width: auto ;
 	height: 25em ;
 }
@@ -127,8 +125,8 @@ p{
 	height : auto ;
 	border-style: solid ;
 	padding : 1em ;
-	margin-left: 1em ;
-	background-color: #b31919 ;
+	margin : 2% 0% 0% 2% ;
+	background-color: #ff000d ;
 }
 
 ol li {

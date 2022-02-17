@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../style/main.css">
-	<title>Le Ronfleur</title>
+	<link rel="stylesheet" type="text/css" href="../../style/ficheCS.css">
+	<title> Le Ronfleur </title>
 </head>
 <body>
 	<header class="container">
 		<a href="../chicAlaJone.html"> <img id="logoX" src="../../resources/logo/logoX.png"></a>
-		<h1 onclick='home()'>Le ronfleur</h1>
+		<h1 onclick='home()'>Le Ronfleur</h1>
 		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../../resources/logo/logoBSPP.png"></a>
 	</header>
 	<nav class="container" id="tabContainer">
@@ -18,7 +18,25 @@
 		<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
 		<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 	</nav>
+	<div class="fiche_caserne">
+		<section class = "texte_fiche">
+			<h2>Le Ronfleur</h2>
+			<p> Il rythmera tes courtes nuits de garde, et tu auras du mal à l’oublier pendant tes repos.
+Les sonneries qui t’intéressent sont les suivantes: </br>
+ronfleur-silence-2 courts pour le v1, </br>
+ronfleur-silence-2 courts-silence-2 courts pour le v2. </br>
+Rajouter le reste des type de sonnerie </br>
+De nuit, en fonction de la caserne, tu seras averti d'un départ de différentes manières : soit le stastionnaire appelle le téléphone de ta chambre: assure-toi donc que le stationnaire sache où tu dors.
+Dans certaines casernes, afin d'éviter que le ronfleur ne se  déclenche pas trop, les VSAV décalent au STRADA. C’est un boîtier accroché à ta ceinture qui vibre pour te prévenir que tu décales. Un conseil: mef ++ à ne pas le perdre en inter.
+ </br> </p>
 
+	<p>Pour en savoir plus sur les sites de la Brigade, <a href="./sites.html">clique ici</a> </p>
+	</section>
+	<figure>
+		<img class='photo_fiche' src="../../resources/images/ronfleur.jpg" alt="ronfleur" id='ronfleur'>
+		<title> Ca décale </title>
+	</figure>
+	</div>
 </body>
 <script src="../../scripts/main.js" charset="utf-8"></script>
 </html>
