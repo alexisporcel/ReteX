@@ -1,2 +1,5 @@
-baseurl: /ReteX
-url: http://alexisporcel.github.io
+# Fichier important
+# Modifie la configuration de Github pages pour faire fonctionner les liens vers les autres fichiers du site. 
+
+# baseurl: /ReteX
+url: http://alexisporcel.github.io/ReteX
