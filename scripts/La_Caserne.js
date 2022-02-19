@@ -1,6 +1,5 @@
 var lastMouseXpos = 0
 var lastMouseYpos = 0
-
 function room(event, state) {
 	var name = event.target.getAttribute('name');
 	let roomCards = document.getElementsByName('card_' + name)
@@ -48,21 +47,31 @@ const PAGE_NAME = 'Brigade_de_sapeurs-pompiers_de_Paris'
 const LINK = `https://fr.wikipedia.org/w/api.php?action=parse&origin=*&prop=text&page=${PAGE_NAME}&formatversion=2&format=json`
 
 function getLastDeath() {
-    const parser = new DOMParser()
-    fetch(LINK, {
-            method: 'GET',
-            mode: 'cors'
-        })
-        .then(res => res.json()) // Convert the response stream into JSON
-        .then(json => parser.parseFromString(json.parse.text, 'text/html')) // Parse the JSON element in HTML
-        .then(html => {
-            let table = html.querySelector('#Morts_en_intervention').parentNode.nextElementSibling.nextElementSibling
-            let row = table.tBodies[0].rows[1]
-            console.log(row)
-			console.log(row.cells[1]);
-            // document.getElementById('iframe').contentWindow.document.getElementById('last_dead').innerHTML = row.cells[1].innerHTML.replace(/<\\?b>/, '') // extract the name
-        })
-        .catch(e => console.error(e))
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (page=='morts_au_feu.html') {
+	    const parser = new DOMParser()
+		try {
+			fetch(LINK, {
+		            method: 'GET',
+		            mode: 'cors'
+		        })
+		        .then(res => res.json()) // Convert the response stream into JSON
+		        .then(json => parser.parseFromString(json.parse.text, 'text/html')) // Parse the JSON element in HTML
+		        .then(html => {
+		            let table = html.querySelector('#Morts_en_intervention').parentNode.nextElementSibling.nextElementSibling
+		            let row = table.tBodies[0].rows[1]
+		            console.log(row)
+					console.log(row.cells[1]);
+					document.getElementById('last_dead').innerHTML = row.cells[1].innerHTML.replace(/<\\?b>/, '') // extract the name
+					document.getElementById('last_dead').style.textDecoration = "none"
+					document.getElementById('last_dead').style.color = "black"
+		        })
+		} catch (e) {
+			console.log(e);
+		}
+	}
+	else {}
 }
 getLastDeath()
 
