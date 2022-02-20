@@ -1,0 +1,11 @@
+#radioTabContainer{
+	height: 10vh;
+	margin-top: 15vh;
+	margin-bottom: 30vh;
+}
+.radioTabButton{
+    background: linear-gradient(45deg, rgb(68, 114, 196), rgb(0, 51, 153));
+}
+.radioTabButton:active {
+    background: linear-gradient(45deg, rgb(0, 51, 153), rgb(68, 114, 196));
+}

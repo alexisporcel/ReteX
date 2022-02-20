@@ -106,7 +106,13 @@ button:active {
     margin-top: 10vh;
 }
 #presentation figure #casque{
-	width: 60vw ;
+	width: 55vw ;
+}
+#presentation p{
+	width : 55% ;
+    margin-top: 5%;
+	margin-right : 5%;
+	font-family: Impact, sans-serif;
 }
 #X21Presentation figure{
     width: 90vw;
@@ -117,10 +123,6 @@ button:active {
 }
 #X21Presentation figure #carteX21{
     width: 45vw;
-}
-#presentation p{
-	width : 55% ;
-	margin-right : 5%;
 }
 footer{
 	display: flex ;
