@@ -9,3 +9,6 @@ function radioTab(event) {
 	// }
 	window.location.assign(`/pages/radio/${event.target.name}.html`)
 }
+function radioButton(event){
+	window.location.assign(`/pages/radio/jeuRadio/${event.target.name}.html`)
+}

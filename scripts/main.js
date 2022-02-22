@@ -7,6 +7,8 @@ function tab(event) {
 	// 	if (path.includes('caserne')) {window.location.assign(`../${event.target.name}.html`)}
 	// 	else {window.location.assign(`./${event.target.name}.html`)}
 	// }
+	console.log(event.target);
+	console.log(event.target.name);
 	window.location.assign(`/pages/${event.target.name}.html`)
 }
 

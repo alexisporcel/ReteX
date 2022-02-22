@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../style/ficheCS.css">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ficheCS.css">
 	<title>SPORT</title>
 </head>
 <body>
@@ -19,6 +20,7 @@
 		<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 	</nav>
 	<div class="fiche_caserne">
+<<<<<<< HEAD
 		<section class = "texte_fiche">
 			<h2>Le Gymnase</h2>
 			<p> Durant tes gardes, tu ne la verras que très peu, et les quelques souvenirs de séances de sapeur te seront bien douloureux.
@@ -29,11 +31,25 @@
  </br> </p>
 
 	<p>Pour en savoir plus sur les sites de la Brigade, <a href="./sites.html">clique ici</a> </p>
+=======
+	<section class = "texte_fiche">
+		<h2>Le Gymnase</h2>
+		<p> Durant tes gardes, tu ne la verras que très peu, et les quelques souvenirs de séances de sapeur te seront bien douloureux.
+			 Mais sache que pendant tes repos, cette salle est entièrement à ta disposition. Avant ou après une garde, en tenue civile ou bspp, n'hésite pas à profiter de tout ce matériel,
+			 pour peut-être percevoir des bras de pompiers en fin de stage.
+		</p>
+>>>>>>> ae25797e5b2fa568589364891281c322b2adb42f
 	</section>
 	<figure>
-		<img class='photo_fiche' src="../../resources/images/sport.jpg" alt="sport" id='sport'>
-		<title> La remise </title>
+		<img class='photo_fiche' src="/resources/images/sport.jpg" alt="sport" id='sport'>
+		<title> Le sport </title>
 	</figure>
+	</div>
+	<footer>
+		<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+		<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+		<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
+	</footer>
 </body>
 <script src="../../scripts/main.js" charset="utf-8"></script>
 </html>

@@ -1,26 +1,3 @@
-body{
-	display: flex ;
-	flex-direction: column;
-	font-family: Tiempos,Georgia,serif;
-	color : black ;
-	margin : 0em ;
-	text-align: justify;
-	background-color: white ;
-	background-size: 100vw 100vh;
-	background-attachment: fixed;
-	overflow: auto;
-	background-color: #CACACA ;
-}
-
-header{
-	background: linear-gradient(0deg, #CACACA 10%,  #F1FF1A) ;
-	height: auto ;
-	top : 0 ;
-}
-nav{
-	background-color: #CACACA ;
-	top : 0px ;
-}
 img{
 	float : top;
 	width : 10vw;
@@ -49,43 +26,6 @@ h1{
 	 width : 80% ;
 	 margin : 2% 0% 0% 2%  ;
  }
-.container{
-	display: flex;
-	justify-content: space-evenly;
-    align-items: center;
-	margin-bottom: 0vh;
-}
-#tabContainer{
-	height: 10vh;
-}
-.tabButton, .tableButton{
-	position: relative;
-	width: 20%;
-	height: 100%;
-    justify-content: center;
-    align-items: center;
-    border-style: none;
-    border-radius: 5px;
-    outline: none;
-    color: white;
-	background: linear-gradient(45deg, #FE0000, #ba0d00);
-    box-shadow: black 3px -3px;
-    cursor: pointer;
-    transition-duration: 0.2s;
-	font-family: Impact, sans-serif;
-	font-size: 1.3em ;
-}
-.tabButton:hover, .tableButton:hover {
-    box-shadow: none;
-    transform: translate3d(3px,-3px,0);
-    transition-delay: 0;
-    transition-duration: 0.2s;
-    transition-property: all;
-    transition-timing-function: line;
-}
-.tabButton:active, .tableButton:active {
-    background: linear-gradient(45deg, #85262e, #501527);
-}
 section{
 	display: flex;
 	flex-direction: row-reverse;
@@ -128,7 +68,12 @@ p{
 	margin : 2% 0% 0% 2% ;
 	background-color: #ff000d ;
 }
-
+figure{
+	margin-top: 10vh;
+}
 ol li {
 	margin : 0 15px 15px 0 ;
+}
+a{
+	color: black
 }

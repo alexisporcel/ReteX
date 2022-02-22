@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../style/ficheCS.css">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ficheCS.css">
 	<title> Le Ronfleur </title>
 </head>
 <body>
 	<header class="container">
-		<a href="../chicAlaJone.html"> <img id="logoX" src="../../resources/logo/logoX.png"></a>
+		<a href="../chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
 		<h1 onclick='home()'>Le Ronfleur</h1>
-		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../../resources/logo/logoBSPP.png"></a>
+		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 	</header>
 	<nav class="container" id="tabContainer">
 		<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
@@ -25,31 +26,31 @@
 Les sonneries qui t’intéressent sont les suivantes: </br>
 <h3> VSAV 1 qui décale </h3>
 
-<audio controls src="../../sons/vsav1.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/vsav1.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 
 <h3> VSAV 2 qui décale </h3>
 
-<audio controls src="../../sons/vsav2.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/vsav2.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 
 <h3> VSAV 3 qui décale </h3>
 
-<audio controls src="../../sons/vsav3.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/vsav3.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 
 <h3> PSE qui décale </h3>
 
-<audio controls src="../../sons/pse.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/pse.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 
 <h3> FPT qui décale </h3>
 
-<audio controls src="../../sons/fpt.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/fpt.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 
 <h3> L'echelle qui décale </h3>
 
-<audio controls src="../../sons/epa.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/epa.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 
 <h3> Le DN qui décale </h3>
 
-<audio controls src="../../sons/dn.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
+<audio controls src="/resources/sons/dn.mp3"> Ton navigateur ne supporte pas ce fichier mp3 ! </audio>
 </br> </br>
 
 
@@ -57,13 +58,17 @@ De nuit, en fonction de la caserne, tu seras averti d'un départ de différentes
 Dans certaines casernes, afin d'éviter que le ronfleur ne se  déclenche pas trop, les VSAV décalent au STRADA. C’est un boîtier accroché à ta ceinture qui vibre pour te prévenir que tu décales. Un conseil: mef ++ à ne pas le perdre en inter.
  </br> </p>
 
-	<p>Pour en savoir plus sur les sites de la Brigade, <a href="./sites.html">clique ici</a> </p>
 	</section>
 	<figure>
-		<img class='photo_fiche' src="../../resources/images/ronfleur.jpg" alt="ronfleur" id='ronfleur'>
+		<img class='photo_fiche' src="/resources/images/ronfleur.jpg" alt="ronfleur" id='ronfleur'>
 		<title> Ca décale </title>
 	</figure>
 	</div>
+	<footer>
+		<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+		<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+		<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
+	</footer>
 </body>
-<script src="../../scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/main.js" charset="utf-8"></script>
 </html>

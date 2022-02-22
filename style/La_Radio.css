@@ -1,11 +1,94 @@
+/* La Radio.html */
 #radioTabContainer{
 	height: 10vh;
 	margin-top: 15vh;
-	margin-bottom: 30vh;
+	margin-bottom: 20vh;
 }
 .radioTabButton{
     background: linear-gradient(45deg, rgb(68, 114, 196), rgb(0, 51, 153));
 }
 .radioTabButton:active {
     background: linear-gradient(45deg, rgb(0, 51, 153), rgb(68, 114, 196));
+}
+
+/* jeuRadio.html */
+.gameContent{
+	width: 100vw;
+	height: 45vh;
+}
+.gameContent #radioTabContainer{
+	max-width: 1300px;
+	width: 850px;
+	height: auto;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 100px);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px 100px;
+}
+.gameContent .radioTabButton{
+	width: 150px;
+	height: 60px;
+}
+.gameContent p{
+	width: 70vw;
+	margin-left: 15vw;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-family : Impact, sans-serif ;
+}
+
+/* Pages de jeu */
+.title2{
+	position: relative;
+	top: -7vh;
+	width: 100vw;
+	text-align: center;
+	font-family : Impact, sans-serif ;
+	font-size: 2em;
+	color: rgb(0, 51, 153);
+}
+h2{
+	margin: 0;
+	padding: 0;
+}
+.content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.content p{
+	font-family : Impact, sans-serif ;
+}
+.messages{
+	width: 60vw;
+}
+#second-message{
+	margin-top: 7vh;
+}
+.empty-spaces{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 120px);
+	justify-content: center;
+	align-items: center;
+}
+.empty-space{
+	width: 100px;
+	height: 1.5em;
+	border: dashed;
+	border-radius: 6px;
+}
+.label{
+	background-color: rgb(68, 114, 196);
+	border-radius: 5px;
+	font-family : Impact, sans-serif ;
+	align-items: center;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 10px;
+	cursor: pointer;
 }

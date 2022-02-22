@@ -39,7 +39,8 @@ Ainsi, vous trouverez sur ce site différents onglets relatifs à certains aspec
 
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
-	<p id='location'>localisation</p>
+	<button id="locationButton" type="button" name="locationButton" onclick="getLocation()">Autoriser la localisation</button>
+	<p id='location'>localisation non autorisée</p>
 	<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
 </footer>
 
@@ -47,4 +48,6 @@ Ainsi, vous trouverez sur ce site différents onglets relatifs à certains aspec
 </body>
 <script src="scripts/main.js" charset="utf-8"></script>
 <script src="scripts/geolocation.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </html>
