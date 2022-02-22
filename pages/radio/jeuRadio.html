@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/La_Radio.css">
 	<title>Jeu Radio</title>
 </head>
 <body>
@@ -20,12 +21,28 @@
 	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 </nav>
 
+<div class="gameContent">
+	<p>Le but : t’entraîner à créer tes messages. On te présente une situation, et tu dois déplacer des étiquettes aux bons endroits pour former le bon message. On te propose une correction et des petites explications.</p>
+	<nav class="container" id="radioTabContainer">
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="police">Police</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="med">Equipe médicale</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="acr">ACR</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="avp">AVP</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="co">Intoxication au CO</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="defenestre">Défenestré</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="attentat">Attentat</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="remplacement">Remplacement</button>
+		<button class="radioTabButton" type="button" onclick="radioButton(event)" name="sp_enfant">Impliquant un SP ou un enfant</button>
+	</nav>
+</div>
+
 <footer>
-	<p>Une envie de contribuer à ReteX ? Contactez-nous ! <p/>
-	<!-- <button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button> -->
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
 	<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
 </footer>
 
 </body>
 <script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/la_Radio.js" charset="utf-8"></script>
 </html>
