@@ -81,6 +81,7 @@ h2{
 	height: 1.5em;
 	border: dashed;
 	border-radius: 6px;
+	background-color: #bababa
 }
 .label{
 	background-color: rgb(68, 114, 196);
