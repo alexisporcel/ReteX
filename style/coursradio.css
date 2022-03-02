@@ -1,0 +1,71 @@
+.introduction_cours {
+  background-color: #de300d ;
+  margin : 5em ;
+  width : auto ;
+  font-family: Candara, sans-serif;
+	font-weight: bold;
+  border-style: double ;
+  border-color: #F1FF1A ;
+  padding : 2em ;
+}
+
+.chapitre_cours {
+  background-color: #de300d ;
+  margin : 1em ;
+  width : auto ;
+  font-family: Candara, sans-serif;
+	font-weight: bold;
+  border-style: double ;
+  border-color: #F1FF1A ;
+  padding : 0em 4em 0em 4em ;
+}
+
+h2 {
+  text-align: center;
+  background-color: #e7eb2d ;
+  color: #242300;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3.5vw;
+  font-family : Impact, sans-serif ;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #ebdf00 ;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: black ;
+}
+h3 {
+  text-align: center;
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 2vw;
+  font-family : Impact, sans-serif ;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #ebdf00 ;
+}
+
+
+.message {
+  text-align: center;
+  background-color: #fff0f0 ;
+  color: #242300;
+  font-family : Impact, sans-serif ;
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 15px;
+  margin : 1em ;
+}
+
+
+strong {
+  font-weight: bold ;
+  font-style: italic;
+  color : #fcd93d ;
+  font-size: 1.3em ;
+}
+
+ol li, ul li {
+	margin : 0 15px 15px 0 ;
+}
