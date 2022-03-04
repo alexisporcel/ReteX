@@ -67,19 +67,21 @@ h2{
 #second-message{
 	margin-top: 7vh;
 }
-.empty-spaces{
+.message-holder{
 	width: 100%;
-	height: auto;
+	min-height: 3em;
 	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 120px);
 	justify-content: center;
 	align-items: center;
+	/* border: dashed; */
+	border-radius: 6px;
+	background-color: #bababa
 }
-.empty-space{
-	width: 100px;
-	height: 1.5em;
-	border: dashed;
+.labels{
+	min-width: 15%;
+	max-width: 30%;
 	border-radius: 6px;
 	background-color: #bababa
 }
