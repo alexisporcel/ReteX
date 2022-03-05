@@ -27,10 +27,14 @@
 			<div class='message-holder'></div>
 		</div>
 	</div>
-	<div class='labels'>
-		<div class='label' draggable="true" onclick="autoDrag(event)" name='Golf 3'>Golf 3</div>
-		<div class='label' draggable="true" onclick="autoDrag(event)">De l'aspirant Blanc</div>
-		<div class='label' draggable="true" onclick="autoDrag(event)">En détresse circulatoire </div>
+	<div class='labelsAndButtons'>
+		<div class='labels'>
+			<div class='label' draggable="true" onclick="autoDrag(event)" parent='labels'>Golf 3</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" parent='labels'>En détresse circulatoire </div>
+		</div>
+		<button name="reset" onclick='location.reload()'>Reset</button>
+		<button name="correc" onclick='correc()'>Correction</button>
 	</div>
 </div>
 
