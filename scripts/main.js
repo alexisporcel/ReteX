@@ -7,7 +7,9 @@ function tab(event) {
 	// 	if (path.includes('caserne')) {window.location.assign(`../${event.target.name}.html`)}
 	// 	else {window.location.assign(`./${event.target.name}.html`)}
 	// }
-	window.location.assign(`/pages/${event.target.name}.html`)
+	console.log(event.target, event.target["name"]);
+	if (String(event.target.name) != 'undefined') {window.location.assign(`/pages/${event.target.name}.html`)}
+	else {window.location.assign(`/pages/${event.target.getAttribute('name')}.html`)}
 }
 
 function home(){

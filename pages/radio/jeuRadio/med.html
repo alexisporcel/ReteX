@@ -14,7 +14,7 @@
 	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 </header>
 
-<div class='title2'name='jeuRadio'><h2 onclick='tab(event)' name='jeuRadio'>Equipe médicale</h2></div>
+<div class='title2'><h2 name='radio/jeuRadio' onclick='tab(event)' style='cursor: pointer' >Equipe médicale</h2></div>
 
 <div class='content'>
 	<div class='messages'>
@@ -29,12 +29,33 @@
 	</div>
 	<div class='labelsAndButtons'>
 		<div class='labels'>
-			<div class='label' draggable="true" onclick="autoDrag(event)" parent='labels'>Golf 3</div>
-			<div class='label' draggable="true" onclick="autoDrag(event)" parent='labels'>De l'aspirant Blanc</div>
-			<div class='label' draggable="true" onclick="autoDrag(event)" parent='labels'>En détresse circulatoire </div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf 3</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>En détresse respiratoire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Secours à</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Un homme malade</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Moyen médicalisé</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Attendons</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Equipe médicale</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf 3</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 4 boulevard perreire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>A Paris</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Equipe médicale de Beaujon</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Structure mobile d'urgence <br> et de réanimation de Beaujon</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Présentée à 1332</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Victime urgence absolue</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Evacuée par</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Opération terminée</div>
 		</div>
 		<button name="reset" onclick='location.reload()'>Reset</button>
 		<button name="correc" onclick='correc()'>Correction</button>
+	</div>
+	<div class='correctionBox'>
+		<p style='color: green'>Voici la correction du message :</p><p> <br> Golf 3 de l'aspirant Blanc, secours à un homme malade urgence absolue au 3 avenue du colonel bonnet et attendons équipe médicale. Golf 3 parlez <br><br><br><br><br> Golf 3 de l'aspirant Blanc, victime urgence absolue évacuée par équipe médicale Beaujon présentée à 1332. Opération terminée.</p>
+	</div>
+	<div class='correctionExplanation'>
+		<p>Test</p>
 	</div>
 </div>
 

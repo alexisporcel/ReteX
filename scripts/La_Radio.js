@@ -75,14 +75,53 @@ function droppable(item){
 function correc(){
 	for (var i = 0; i < labels.length; i++) {
 		labels[i].setAttribute('draggable', 'false')
-		labels[i].setAttribute('onmouseover', 'showExplanation()')
-		labels[i].setAttribute('onmouseout', 'hideExplanation()')
+		correctionBox = document.querySelectorAll('.correctionBox')[0]
+		labelsAndButtons = document.querySelectorAll('.labelsAndButtons')[0]
+		labelsAndButtons.style.display = 'none'
+		correctionBox.style.display = 'block'
 	}
 }
 
-function showExplanation(){
-	console.log('show');
+function showExplanation(e){
+	if (e.target.getAttribute('draggable') == 'false') {
+		let correctionExplanation = document.querySelectorAll('.correctionExplanation')[0]
+		correctionExplanation.style.display = 'flex'
+		console.log(explanation, e.target.innerHTML, explanation[e.target.innerHTML]);
+		if (String(explanation[e.target.innerHTML]) != 'undefined') {correctionExplanation.innerHTML = explanation[e.target.innerHTML]}
+		else {correctionExplanation.innerHTML = "pas d'information complémentaire"}
+
+		document.addEventListener('mousemove', function(e) {
+			let card = document.querySelectorAll('.correctionExplanation')[0]
+			lastMouseXpos = e.x
+			lastMouseYpos = e.y
+			let top = e.y + window.scrollY + 30;
+			let left = e.x + window.scrollX + 30;
+			card.style.top = top + 'px';
+			card.style.left = left + 'px';
+		});
+		document.addEventListener('scroll',function(e) {
+			let card = document.querySelectorAll('.correctionExplanation')[0]
+			let infocard = card.getBoundingClientRect();
+			let top = lastMouseYpos + window.scrollY + 30;
+			let left = lastMouseXpos + window.scrollX + 30;
+			card.style.top = top + 'px';
+			card.style.left = left + 'px';
+		})
+	}
 }
-function hideExplanation(){
-	console.log('hide');
+function hideExplanation(e){
+	if (e.target.getAttribute('draggable') == 'false'){
+		let correctionExplanation = document.querySelectorAll('.correctionExplanation')[0]
+		correctionExplanation.style.display = 'none'
+	}
+}
+
+
+let explanation = {
+	"Golf 3" : "On doit toujours demander la parole au CSO (ici Golf 3)",
+	"De l'aspirant Blanc" : "On doit toujours présenter le nom du chef d'agrès qui énonce le message",
+	"En détresse circulatoire" : "Pas besoin d'expliquer la patologie de la victime dans le message",
+	"Structure mobile d'urgence et de réanimation de Beaujon" : "Il ne faut pas préciser la nature du moyen. Seulement sa provenance.",
+	"Equipe médicale de Beaujon" : "Toujours préciser la provenance du moyen",
+	"Au 4 boulevard perreire" : "Préciser l'adresse dans le premier message, pas besoin dans le deuxième message."
 }

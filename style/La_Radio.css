@@ -83,6 +83,7 @@ h2{
 .labelsAndButtons{
 	min-width: 15%;
 	max-width: 30%;
+	max-height: 300px;
 }
 .labels{
 	height: 100%;
@@ -91,6 +92,7 @@ h2{
 	margin-bottom: 5%;
 	border-radius: 6px;
 	background-color: #bababa;
+	overflow-y: scroll;
 }
 .label{
 	background-color: rgb(68, 114, 196);
@@ -111,4 +113,27 @@ button[name='correc']{
 	height: 1.5em;
 	width: 100%;
 	background: linear-gradient(45deg, rgb(48, 186, 62), rgb(0, 105, 10));
+}
+.correctionBox{
+	min-width: 15%;
+	max-width: 30%;
+	padding: 1%;
+	border-radius: 6px;
+	background-color: #bababa;
+	display: none;
+}
+.correctionExplanation{
+	position:absolute;
+	width: 200px;
+	height: 150px;
+	padding: 0;
+	margin: 0;
+	border-radius: 6px;
+	background-color: #878787;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family : Impact, sans-serif ;
+	display: none;
+	padding: 1%;
 }
