@@ -14,15 +14,50 @@
 	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 </header>
 
-<nav class="container" id="tabContainer">
-	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
-</nav>
+<div class='title2'><h2 name='radio/jeuRadio' onclick='tab(event)' style='cursor: pointer' >AVP</h2></div>
 
-<div class='title2'><h2>AVP</h2></div>
-
+<div class='content'>
+	<div class='messages'>
+		<div class='message'>
+			<p>Situation : Tu es l’aspirant Blanc du VSAV 465 de Champerret. Tu portes secours à une femme en ACR à domicile. Il y a la famille autour. Tes équipiers se relayent sur le massage, tu as fait ta demande de moyen, l'AR de Champerret est sur le point d'arriver. <br>Message de renseignement :</p>
+			<div class='message-holder'></div>
+		</div>
+		<div class='message' id='second-message'>
+			<p>C'est la fin de l'intervention, la victime est décédée. Tu as rempli le cahier ACR, le médecin de l'AR - présenté à 00h10 - a expliqué à la famille quoi faire. Vous rentrez indisponible à la caserne pour la remise en condition du matériel. <br> Message de renseignement :</p>
+			<div class='message-holder'></div>
+		</div>
+	</div>
+	<div class='labelsAndButtons'>
+		<div class='labels'>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf 3</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf 3</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Secours à</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Une femme en arrêt cardio respiratoire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Une victime urgence absolue</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Attendons équipe médicale</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 4 boulevard perreire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>à Paris</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Je demande Police</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Pour</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Victime décédée</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>laissée à disposition de</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>la famille</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>la police</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Equipe médicale Champerret présentée à 00h10</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Ambulance de réanimation Champerret présentée à 00h10</div>
+		</div>
+		<button name="reset" onclick='location.reload()'>Reset</button>
+		<button name="correc" onclick='correc()'>Correction</button>
+	</div>
+	<div class='correctionBox'>
+		<p style='color: green'>Voici la correction du message :</p><p> <br> Golf 3 de l'aspirant Blanc, Secours à une femme en arrêt cardio respiratoire au 4 boulevard perreire. Attendons équipe médicale. Golf 3 parlez <br><br> [Pas besoin de la police si la mort de la victime est naturelle et que la famille est disposée à prendre en charge le corps. Ne pas hésiter à appeler police si suspicion d'agression ou si le seul membre de la famille est le mari âgé difficilement lucide.] <br> <br> <br> <br> Golf 3 de l'aspirant Blanc, victime décédée laissée à disposition de la famille. </p>
+	</div>
+	<div class='correctionExplanation'>
+		<p>Test</p>
+	</div>
+</div>
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>

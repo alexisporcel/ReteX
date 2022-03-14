@@ -121,7 +121,14 @@ let explanation = {
 	"Golf 3" : "On doit toujours demander la parole au CSO (ici Golf 3)",
 	"De l'aspirant Blanc" : "On doit toujours présenter le nom du chef d'agrès qui énonce le message",
 	"En détresse circulatoire" : "Pas besoin d'expliquer la patologie de la victime dans le message",
-	"Structure mobile d'urgence et de réanimation de Beaujon" : "Il ne faut pas préciser la nature du moyen. Seulement sa provenance.",
+	"Structure mobile d'urgence <br> et de réanimation de Beaujon" : "Il ne faut pas préciser la nature du moyen. Seulement sa provenance.",
 	"Equipe médicale de Beaujon" : "Toujours préciser la provenance du moyen",
-	"Au 4 boulevard perreire" : "Préciser l'adresse dans le premier message, pas besoin dans le deuxième message."
+	"Au 4 boulevard perreire" : "Préciser l'adresse dans le premier message, pas besoin dans le deuxième message.",
+	"Pour un accident de la circulation" : "Préciser le motif de ta demande dans le premier message. Pas besoin dans le deuxième",
+	"moyen de transport non médicalisé brigade" : "Précise la nature du vecteur qui évacue la victime. Pas le nom du moyen (ex VSAV 146)",
+	"Une victime urgence relative" : "Si la victime a été UA pendant l'intervention, i.e. que tu as eu besoin d'un moyen médicalisé, alors la victime reste UA toute l'inter (et tu peux transporter ou laisser sur place une UA qui en soit va mieux. [Sur ordre du médecin]). Si tu n'as pas eu besoin de moyen médicalisé, alors la victime est UR. ",
+	"Une victime urgence absolue" : "Si la victime a été UA pendant l'intervention, i.e. que tu as eu besoin d'un moyen médicalisé, alors la victime reste UA toute l'inter (et tu peux transporter ou laisser sur place une UA qui en soit va mieux. [Sur ordre du médecin]). Si tu n'as pas eu besoin de moyen médicalisé, alors la victime est UR. ",
+	"Ambulance de réanimation Champerret présentée à 00h10" : "On ne présente pas les moyens brigade.",
+	"Equipe médicale Champerret présentée à 00h10" : "On ne présente pas les moyens brigade.",
+	"A Paris" : "On ne précise la ville uniquement pour les villes autre que Paris. [C'est pour éviter les confusions]"
 }
