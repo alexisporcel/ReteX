@@ -14,14 +14,50 @@
 	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 </header>
 
-<nav class="container" id="tabContainer">
-	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
-</nav>
+<div class='title2'><h2 name='radio/jeuRadio' onclick='tab(event)' style='cursor: pointer' >Attentat</h2></div>
 
-<div class='title2'><h2>Attentat</h2></div>
+<div class='content'>
+	<div class='messages'>
+		<div class='message'>
+			<p>Situation : Tu es l’aspirant Blanc du VSAV 465 de Champerret. Tu portes secours à deux jeunes blessés par balles. L'assaillant est introuvable, caché dans l'immeuble. Des forces vigipirates sont dans la rue. Tu t'enfermes dans l'appartement des jeunes et tu passes ton message. <br>Message de demande :</p>
+			<div class='message-holder'></div>
+		</div>
+	</div>
+	<div class='labelsAndButtons'>
+		<div class='labels'>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf 3</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Les secours font face à une attaque par arme à feu</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Je demande</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un véhicule de secours et d'assistance à victimes</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un engin pompe</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un officier de garde compagnie</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un écran brise vue</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un moyen élévateur aérien</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>police</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>forces spéciales de la Brigade Recherche Intervention</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>complément de départ</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>axe à éviter Avenue Guersant</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>pour attentat</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>périmètre de sécurité établi</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>forces vigipirates sur les lieux</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 4 boulevard pereirre</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Secours à 1 et 1 2 victimes urgence absolue </div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>blessé(s) par arme à feu</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Attendons équipe médicale</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Assaillant sur les lieux non localisé</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Reconnaissance en cours</div>
+		</div>
+		<button name="reset" onclick='location.reload()'>Reset</button>
+		<button name="correc" onclick='correc()'>Correction</button>
+	</div>
+	<div class='correctionBox'>
+		<p style='color: green'>Voici la correction du message :</p><p> <br> Golf 3 de l'aspirant Blanc, je demande complément de départ pour attentat au 4 boulevard pereirre. Secours à 1 et 1, 2 victimes urgences absolues blessées par arme à feu. Attendons équipe médicale. Assaillant sur les lieux non localisé. Forces vigipirates sur les lieux. Perimètre de sécurité établi, reconnaissance en cours. </p>
+	</div>
+	<div class='correctionExplanation'>
+		<p>Test</p>
+	</div>
+</div>
 
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
@@ -30,4 +66,5 @@
 </footer>
 </body>
 <script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/La_Radio.js" charset="utf-8"></script>
 </html>

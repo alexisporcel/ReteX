@@ -78,7 +78,8 @@ h2{
 	align-items: center;
 	/* border: dashed; */
 	border-radius: 6px;
-	background-color: #bababa
+	background-color: #bababa;
+	font-family: Impact, sans-serif;
 }
 .labelsAndButtons{
 	min-width: 15%;

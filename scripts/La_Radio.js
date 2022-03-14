@@ -131,9 +131,9 @@ let explanation = {
 	"Une victime urgence absolue" : "Si la victime a été UA pendant l'intervention, i.e. que tu as eu besoin d'un moyen médicalisé, alors la victime reste UA toute l'inter (et tu peux transporter ou laisser sur place une UA qui en soit va mieux. [Sur ordre du médecin]). Si tu n'as pas eu besoin de moyen médicalisé, alors la victime est UR. ",
 	"Ambulance de réanimation Champerret présentée à 00h10" : "On ne présente pas les moyens brigade.",
 	"Equipe médicale Champerret présentée à 00h10" : "On ne présente pas les moyens brigade.",
-	"A Paris" : "On ne précise la ville uniquement pour les villes autre que Paris. [C'est pour éviter les confusions]",
+	"A Paris" : "On précise la ville uniquement pour les villes autre que Paris. [C'est pour éviter les confusions]",
 	"Circulation rétablie" : "Tu peux le dire si à ton départ, la circulation est rétablie",
 	"un enfant urgence absolue évacué par équipe médicale Beaujon" : "préciser le fait que la victime soit un enfant",
 	"Circulation réduite à une voie" : "Bien préciser au commandement quand la circulation est perturbée",
-	"Je demande un groupe médical" : "Voir le [...] pour connaître les groupes"
+	"Je demande un groupe médical" : "Voir la partie 2 titre 1 du BSP 115.2 pour connaître les groupes"
 }
