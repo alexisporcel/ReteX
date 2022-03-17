@@ -3,13 +3,32 @@
 	width: 50vw;
 	margin-top: 10vh;
 	margin-left: 25vw;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 100px);
 	justify-content: center;
 	align-items: center;
 	grid-gap: 10px;
 }
 
-#pdf_img{
+.pdf{
+	padding : 0.5px;
+	cursor: pointer;
+	align-items: center;
+}
+.pdf:hover{
+	padding : 0;
+	border : solid;
+	border-radius: 5px;
+	border-width: 0.5px;
+}
+#pdf_init{
+	display: none;
+}
+.pdf_img{
 	width: 5vw;
+}
+.pdf_title{
+	width: auto;
+	font-size: 1em;
+	font-family : Impact, sans-serif ;
+	cursor: pointer;
+	margin: 0
 }
