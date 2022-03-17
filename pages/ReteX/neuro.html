@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ReteX.css">
 	<title>Fiches ReteX</title>
 </head>
 <body>
@@ -20,6 +21,13 @@
 	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
 </nav>
 
+<div class="container-grid" id="pdf-container">
+	<div class='pdf' id='pdf_init'>
+		<img class='pdf_img' src='/resources/logo/pdf_logo.png'>
+		<p class='pdf_title'>BSP 2002.2</p>
+	</div>
+</div>
+
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
@@ -28,4 +36,5 @@
 
 </body>
 <script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/ReteX.js" charset="utf-8"></script>
 </html>

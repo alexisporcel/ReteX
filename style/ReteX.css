@@ -1,6 +1,7 @@
 
 .container-grid{
 	width: 50vw;
+	min-height: 35vh;
 	margin-top: 10vh;
 	margin-left: 25vw;
 	justify-content: center;
