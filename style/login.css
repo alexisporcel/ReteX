@@ -1,7 +1,11 @@
+.content{
+	min-height: 50vh;
+	text-align: center;
+}
+
 .log-container{
 	display: flex;
 	width: 100%;
-	min-height: 55vh;
 	align-items: center;
 	justify-content: center;
 	font-family: sans-serif;
@@ -81,4 +85,7 @@
 }
 #hide{
 	display: none;
+}
+#info{
+	font-family: Impact
 }

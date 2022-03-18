@@ -3,15 +3,16 @@
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' type='text/css' href='../style/main.css'>
-	<link rel='stylesheet' type='text/css' href='../style/BSP.css'>
+	<link rel='stylesheet' type='text/css' href='/style/main.css'>
+	<link rel='stylesheet' type='text/css' href='/style/BSP.css'>
+	<link rel='stylesheet' type='text/css' href='/style/pdf.css'>
 	<title>BSP</title>
 </head>
 <body>
 <header class='container'>
-	<a href="./chicAlaJone.html"> <img id="logoX" src="../resources/logo/logoX.png"></a>
+	<a href="./chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
 	<div class='title'><h1 onclick='home()'>BSP</h1></div>
-	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../resources/logo/logoBSPP.png"></a>
+	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 </header>
 
 <nav class='container' id='tabContainer'>
@@ -20,16 +21,12 @@
 	<button class='tabButton' type='button' onclick='tab(event)' name='La Caserne'>La Caserne</button>
 	<button class='tabButton' type='button' onclick='tab(event)' name='La Radio'>La Radio</button>
 </nav>
-<nav id='pdf_container'>
-	<div class='pdf'>
-		<a href="/resources/pdf/Retex/cardio/FE 2019-5 SUAP arrêt des hémorragies c'est le résultat qui compte.pdf"><img id='pdf_img' src='../resources/logo/pdf_logo.png'></a>
-		<p class='pdf_title' href='#'>BSP 2002.2</p>
+<div class="container-grid" id="pdf-container">
+	<div class='pdf' id='pdf_init'>
+		<img class='pdf_img' src='/resources/logo/pdf_logo.png'>
+		<p class='pdf_title'>BSP 2002.2</p>
 	</div>
-	<div class='pdf'>
-		<a href='#'><img id='pdf_img' src='../resources/logo/pdf_logo.png'></a>
-		<p class='pdf_title' href='#'>BSP 115.3</p>
-	</div>
-</nav>
+</div>
 <hr>
 <div class='container'>
 	<div class='glossary'>
@@ -40,12 +37,6 @@
 			</div>
 			<nav>
 				<ul>
-					<!-- <li class='glossaryOptions'><a>Trier par</a>
-						<ul class='under'>
-							<li><a onclick='sort(event)' name='alpha'>Ordre alphabétique</a></li>
-							<li><a onclick='sort(event)' name='theme'>Thème</a></li>
-						</ul>
-					</li> -->
 					<li class='glossaryOptions'><a>Afficher</a>
 						<ul class='under'>
 							<li><a onclick='show(event)' name='tout'>Tout</a></li>
@@ -596,10 +587,11 @@
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
-	<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
+	<p id='signature' onclick='chicAlaJone()'> Créé par les X21 BSPP </p>
 </footer>
 
 </body>
-<script src='../scripts/main.js' charset='utf-8'></script>
-<script src='../scripts/BSP.js' charset='utf-8'></script>
+<script src='/scripts/main.js' charset='utf-8'></script>
+<script src='/scripts/BSP.js' charset='utf-8'></script>
+<script src='/scripts/pdf.js' charset='utf-8'></script>
 </html>

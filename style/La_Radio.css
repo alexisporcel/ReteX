@@ -14,7 +14,7 @@
 /* jeuRadio.html */
 .gameContent{
 	width: 100vw;
-	height: 45vh;
+	min-height: 45vh;
 }
 .gameContent #radioTabContainer{
 	max-width: 1300px;
@@ -85,6 +85,7 @@ h2{
 	min-width: 15%;
 	max-width: 30%;
 	max-height: 300px;
+	margin-bottom: 10vh;
 }
 .labels{
 	height: 100%;

@@ -14,20 +14,53 @@
 	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 </header>
 
-<nav class="container" id="tabContainer">
-	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
-</nav>
+<div class='title2'><h2 name='radio/jeuRadio' onclick='tab(event)' style='cursor: pointer' >Impliquant un enfant ou un pompier</h2></div>
 
-<div class='title2'><h2>Remplacement</h2></div>
+<div class='content'>
+	<div class='messages'>
+		<div class='message'>
+			<p>Situation : Tu es l’aspirant Blanc du VSAV 431 de CHLY. Tu partais sur intervention pour personne malade lieu privé au 33 rue du progrès à Montreuil et tu viens de cartonner une voiture au croisement entre la cour de Vincennes et le boulevard de Picpus. Le conducteur de la voiture est urgence relative. Un OGC doit venir pour signer le constat. <br>Message de renseignement :</p>
+			<div class='message-holder'></div>
+		</div>
+	</div>
+	<div class='labelsAndButtons'>
+		<div class='labels'>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 33 rue du progrès à Montreuil</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au sans numéro Cour de Vincennes angle Boulevard de Picpus</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Bilan provisoire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>1 urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>faites partir un engin en remplacement du VSAV 431 CHLY</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>partit pour personne malade lieu privé</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>faites partir les secours</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>pour un accident de la circulation impliquant</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>le VSAV 431 de CHLY</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un véhicule du corps</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>et un véhicule de tourisme</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>et un véhicule léger</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>et un véhicule léger</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Perimètre de sécurité établi</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X parlez.</div>
+		</div>
+		<button name="reset" onclick='location.reload()'>Reset</button>
+		<button name="correc" onclick='correc()'>Correction</button>
+	</div>
+	<div class='correctionBox'>
+		<p style='color: green'>Voici la correction du message :</p><p> <br> Golf 2 de l’Aspirant Porcel, faites partir un engin en remplacement du VSAV 431 CHLY parti pour personne malade lieu privé au 33 rue du progrès à Montreuil et faites partir les secours au sans numéro Cour de Vincennes angle Boulevard de Picpus pour un accident de circulation impliquant un véhicule du corps et un véhicule de tourisme. Bilan provisoire : 1 urgence relative. <br><br><br> [Petite dédicace à AP et AM X21 qui ont donné une semaine de leur vie pour la Patrie] </p>
+	</div>
+	<div class='correctionExplanation'>
+		<p>Test</p>
+	</div>
+</div>
 
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
-	<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
+	<p id='signature' onclick='chicAlaJone()'> Créé par les X21 BSPP </p>
 </footer>
 </body>
 <script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/La_Radio.js" charset="utf-8"></script>
 </html>

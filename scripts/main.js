@@ -49,13 +49,16 @@ function init(){
 	var page = path.split("/").pop()
 
 	if (page == 'index.html') {
+		document.querySelector('body').style.display = 'flex'
 		document.querySelector('.Password').addEventListener('keypress', function (e) {if (e.key === 'Enter') {submit()}});
 		storage = window.sessionStorage;
 	}
 	else{
 		storage = window.sessionStorage;
-		try { if(storage['auth'] != 'true'){
-			window.location.assign(`/index.html`) } }
+		try {
+			if(storage['auth'] != 'true'){ window.location.assign(`/index.html`) }
+			else { document.querySelector('body').style.display = 'flex' }
+		}
 		catch (e) { window.location.assign(`/index.html`) }
 	}
 }
