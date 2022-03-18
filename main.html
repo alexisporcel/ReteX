@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<title> ReteX</title>
+</head>
+<body>
+<header class="container">
+	<a href="pages/chicAlaJone.html"> <img id="logoX" src="resources/logo/logoX.png"></a>
+	<div class='title'><h1 onclick='home()'>ReteX</h1></div>
+	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="resources/logo/logoBSPP.png"></a>
+</header>
+<nav class="container" id="tabContainer">
+	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
+	<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
+	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
+	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
+</nav>
+
+<section id="presentation">
+		<p>Chers chefs d'agrès, <br/>
+	La mise en commun des expériences rencontrées sur intervention est un des piliers de l'enseignement,
+	et la meilleure façon d'assurer une maitrise opérationnelle permanente pour tous les chefs d'agrès. <br/>
+
+Alors nous vous proposons une mise en commun de nos expériences sur le terrain. Sans volonté de faire le sarce, sans vanter ses campagnes,
+cela a pour but de prendre en charge plus efficacement, plus complètement et plus humainement les victimes en intervention. <br/>
+Vous vous rendrez compte au fil des semaines que la durée du stage n'est pas assez longue pour découvrir la totalité du monde de la Brigade de Sapeurs Pompiers de Paris. Ce site est donc une simple aide pour éviter de "perdre du temps" sur quelques élements de la vie courante du Sapeur Pompier de Paris. </br>
+Bien évidemment, ce site n'a pas pour vocation de tout décrire, tout relater. Il vous appartient à vous, aspirant, de découvrir votre caserne, sa garde incendie et toutes ses particularités et traditions qui ne sauraient etre décrites dans ce site.
+Ainsi, vous trouverez sur ce site différents onglets relatifs à certains aspects délicats pour l'aspirant qui atterit dans sa caserne. Bonne lecture !</p>
+<figure>
+	<img id="casque" src="resources/images/casque.png"/>
+</figure>
+</section>
+
+<footer>
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<button id="locationButton" type="button" name="locationButton" onclick="getLocation()">Autoriser la localisation</button>
+	<p id='location'>localisation non autorisée</p>
+	<p id='signature' onclick='chicAlaJone()'> Crée par les X21 BSPP </p>
+</footer>
+
+
+</body>
+<script src="scripts/main.js" charset="utf-8"></script>
+<script src="scripts/geolocation.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

@@ -14,15 +14,55 @@
 	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 </header>
 
-<nav class="container" id="tabContainer">
-	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
-	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
-</nav>
+<div class='title2'><h2 name='radio/jeuRadio' onclick='tab(event)' style='cursor: pointer' >Impliquant un enfant ou un pompier</h2></div>
 
-<div class='title2'><h2>Intervention impliquant un pompier ou un enfant</h2></div>
-
+<div class='content'>
+	<div class='messages'>
+		<div class='message'>
+			<p>Situation : Tu es l’aspirant Blanc du VSAV 465 de Champerret. Tu portes secours à un sapeur-pompier qui s'est cassé le bras. <br>Message de renseignement :</p>
+			<div class='message-holder'></div>
+		</div>
+		<div class='message'>
+			<p>Situation : Tu es l’aspirant Blanc du VSAV 465 de Champerret. Tu portes secours à un enfant qui a de la fièvre et une femme qui s'est cassé le poignet. <br>Message de renseignement :</p>
+			<div class='message-holder'></div>
+		</div>
+	</div>
+	<div class='labelsAndButtons'>
+		<div class='labels'>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 4 boulevard perreire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 4 boulevard perreire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>à Paris</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>à Paris</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Secours à</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Secours à</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Bilan provisoire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Bilan provisoire</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>1 et 1, 2 urgences relatives dont un enfant</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Une femme urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Un enfant urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Un Sapeur-Pompier de Paris urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Un militaire du corps urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Attendons équipe médicale</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Attendons équipe médicale</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Assurons transport</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Assurons transport</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Reconnaissance en cours</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Reconnaissance et opération terminée</div>
+		</div>
+		<button name="reset" onclick='location.reload()'>Reset</button>
+		<button name="correc" onclick='correc()'>Correction</button>
+	</div>
+	<div class='correctionBox'>
+		<p style='color: green'>Voici la correction du message :</p><p> <br> Golf 3 de l'aspirant Blanc, Secours à un Sapeur-Pompier de Paris urgence relative et assurons transport. <br><br><br><br> Golf 3 de l'aspirant Blanc, Secours à 1 et 1, 2 urgences relatives dont un enfant. Assurons transport. </p>
+	</div>
+	<div class='correctionExplanation'>
+		<p>Test</p>
+	</div>
+</div>
 <footer>
 	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
 	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
@@ -30,4 +70,5 @@
 </footer>
 </body>
 <script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/La_Radio.js" charset="utf-8"></script>
 </html>
