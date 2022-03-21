@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ReteX.css">
+	<title>Fiches ReteX</title>
+</head>
+<body>
+<header class="container">
+	<a href="./chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
+	<div class='title'><h1 onclick='home()'>Fiches ReteX des aspirants</h1></div>
+	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
+</header>
+
+<nav class="container" id="tabContainer">
+	<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
+	<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
+	<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
+	<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
+</nav>
+
+<nav class="container" id="radioTabContainer">
+	<button class="radioTabButton" type="button" onclick="radioButton(event)" name="vsavSurFeu">Le VSAV sur feu</button>
+</nav>
+
+
+<footer>
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+	<p id='signature' onclick='chicAlaJone()'> Créé par les X21 BSPP </p>
+</footer>
+
+</body>
+<script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/ReteX.js" charset="utf-8"></script>
+</html>

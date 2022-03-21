@@ -3,15 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../style/main.css">
-	<link rel="stylesheet" type="text/css" href="../../style/ficheCS.css">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ficheCS.css">
 	<title>SITES</title>
 </head>
 <body id='sitesBody'>
 	<header class="container">
-		<a href="../chicAlaJone.html"> <img id="logoX" src="../../resources/logo/logoX.png"></a>
+		<a href="../chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
 		<h1 onclick='home()'>Aide sur les sites brigades</h1>
-		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="../../resources/logo/logoBSPP.png"></a>
+		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
 	</header>
 	<nav class="container" id="tabContainer">
 		<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
@@ -23,26 +23,29 @@
 		<section class = "texte_fiche">
 			<p name='textBody'>
 				Depuis un ordinateur Brigade on peut se connecter aux sites suivants :
-				<li> <a href="http://intranet/">l'intranet</a></li>
-				<li><a href="https://portail.pompiersparis.fr/">le portail</a></li><br>
+				<li> <a href="http://intranet/" target="_blank">l'intranet</a></li>
+				<li><a href="https://portail.pompiersparis.fr/" target="_blank">le portail</a></li><br>
 				Sur l’intranet se trouve le répertoire téléphonique de la Brigade, la liste des BSP, les liens vers les sites Agrid, Sigtao et la VAD.<br>
-				Liste des BSP à retrouver sur le site <a href="../BSP.html">ReteX</a> ou sur l’intranet dans CORPUS. <br><br>
-	            <li id="sigtao"><b> <a href="https;//sigtao.pompiersparis.fr/Login.aspx">Sigtao</a> </b> : <br> c’est le site sur lequel on pose nos jours de permission et nos désidératas de garde. On peut voir l’équipage de ses futurs gardes et rentrer les SIPO. Une SIPO est un renseignement pour le commandement. Tous les jours les SP s'entraînent à réaliser des gestes de secourisme et d’incendie. Le chef d’agrès VSAV doit faire un cours le jour de sa garde pour entraîner son équipage à manœuvrer. Lorsque c’est fait, il le renseigne dans la SIPO. <br>
+				<p style='width:100%;text-align:center'>La liste des BSP se retrouve sur le site <a href="/pages/BSP.html">ReteX</a> ou sur l’intranet dans la partie <a href="http://corpusv2/BuroBEP/SitePages/LISTEDESBSP.aspx" target='_blank'>CORPUS</a>.</p> <br><br>
+	            <li id="sigtao"><b> <a href="https://sigtao.pompiersparis.fr/Login.aspx" target="_blank">Sigtao</a> </b> : <br> c’est le site sur lequel on pose nos jours de permission et nos désidératas de garde. On peut voir l’équipage de ses futurs gardes et rentrer les SIPO. Une SIPO est un renseignement pour le commandement. Tous les jours les SP s'entraînent à réaliser des gestes de secourisme et d’incendie. Le chef d’agrès VSAV doit faire un cours le jour de sa garde pour entraîner son équipage à manœuvrer. Lorsque c’est fait, il le renseigne dans la SIPO. <br>
 	                           Pour voir son planning SIGTAO : Screens <br>
 	                           Pour voir son équipage lors d’une future garde : Screens <br>
 	                           Pour entrer une SIPO : Screens <br> <br>
 				</li>
-	            <li><b> <a href="agrid/IsilogWebSystem">Agrid</a> </b> : <br>c’est le site sur lequel on peut faire des réclamations. Si l’accès à un site est impossible, un problème de connexion avec sa boîte mail, etc. Si ta demande nécessite l’action d’un bureau, tu peux ouvrir un ticket Agrid. Le bureau reçoit ta demande et traite ton problème (enfin en théorie). Lorsque le problème est traité, le bureau en question clôture le ticket.
+	            <li><b> <a href="https://agrid/IsilogWebSystem" target="_blank">Agrid</a> </b> : <br>c’est le site sur lequel on peut faire des réclamations. Si l’accès à un site est impossible, un problème de connexion avec sa boîte mail, etc. Si ta demande nécessite l’action d’un bureau, tu peux ouvrir un ticket Agrid. Le bureau reçoit ta demande et traite ton problème (enfin en théorie). Lorsque le problème est traité, le bureau en question clôture le ticket.
 	                           Pour rédiger un ticket AGRID : Screens <br> <br>
 				</li>
-				<li id="vad"><b> <a href="http://vad/">VAD</a></b> : <br>La vente à distance, c’est le site sur lequel on peut commander des vêtements Brigade. Sous réserve d’avoir des points VAD (on a le droit à suffisamment de points pour commander la tenue de cérémonie Brigade mais pas plus…) <br> <br></li>
+				<li id="vad"><b> <a href="http://vad/" target="_blank">VAD</a></b> : <br>La vente à distance, c’est le site sur lequel on peut commander des vêtements Brigade. Sous réserve d’avoir des points VAD (on a le droit à suffisamment de points pour commander la tenue de cérémonie Brigade mais pas plus…) <br> <br></li>
 				<li id="adagio"><b>Adagio</b> : <br> c’est l’application dans laquelle on inscrit nos rapports de fin d’intervention. La dernière paperasse à faire à la fin de ton intervention. <br>
 	            	Tuto vidéo pour remplir un rapport. <br><br></li>
+
+				<br> Pour les IETA en particulier : <br><br>
+
 				<li><b>LNacre</b> : <br> c’est l’application dans laquelle on rédige des notes officielles pour faire des demandes à des supérieurs ou des bureaux. C’est très peu utilisé en réalité. Sauf par deux ou trois lieutenant-colonel… <br>
 	            	Screen pour info, pas de tuto. <br><br></li>
 	            <li><b>Putty</b> : <br> c’est la porte d’accès à tous les serveurs Brigade. Avec le mot de passe du serveur que tu dois modifier, tu deviens le mastermind… <br>
 	                        Tuto vidéo <br> <br></li>
-	            <li><b> <a href="https://centreon/">Centréon</a> </b> : <br> c’est le site sur lequel on supervise tous les moyens informatiques de la Brigade. Les pax du BONUM ou du BOSI peuvent supprimer la supervision d’un serveur qu’on supervise déjà, ajouter des constantes à superviser pour tel serveur, déplacer des données d’un serveur à un autre, etc… <br>
+	            <li><b> <a href="https://centreon/" target="_blank">Centréon</a> </b> : <br> c’est le site sur lequel on supervise tous les moyens informatiques de la Brigade. Les pax du BONUM ou du BOSI peuvent supprimer la supervision d’un serveur qu’on supervise déjà, ajouter des constantes à superviser pour tel serveur, déplacer des données d’un serveur à un autre, etc… <br>
 				Doc pour utilisateur premier niveau. <br> <br> Le portail Brigade est un moyen d’accéder sur son téléphone ou sur son ordinateur personnel au site SIGTAO et à sa boîte mail Outlook.</li>
 			</p>
 		</section>

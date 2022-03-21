@@ -93,3 +93,26 @@ function showPassword() {
 	hide.style.display = 'none'
   }
 }
+
+// ATTEMPT AUTO SCROLL WHEN APPROACHING THE BOTTOM EDGE OF THE WINDOW
+
+// document.addEventListener('mousemove', function(event){
+// 	function pageScroll(){
+// 		window.scrollBy(0,1);
+// 		scrolldelay = setTimeout(pageScroll,10);
+// 	}
+// 	if (window.sessionStorage['enableAutoScroll'] == 'true') {
+// 		console.log(event);
+// 		var viewportX = event.clientX;
+// 		var viewportY = event.clientY;
+// 		// Get the viewport dimensions.
+// 		var viewportWidth = document.documentElement.clientWidth;
+// 		var viewportHeight = document.documentElement.clientHeight;
+// 		var edgeBottom = ( viewportHeight - 100 );
+// 		var isInBottomEdge = ( viewportY > edgeBottom );
+// 		console.log(isInBottomEdge);
+// 		if (isInBottomEdge){
+// 			pageScroll()
+// 		}
+// 	}
+// })

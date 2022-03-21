@@ -1,0 +1,161 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>
+               Automatically Scroll The Window When The User Approaches The Viewport Edge In JavaScript
+        </title>
+</head>
+<body>
+        <h1>Automatically Scroll The Window When The User Approaches The Viewport Edge In JavaScript</h1>
+        <script type="text/javascript">
+
+               var edgeSize = 200;
+               var timer = null;
+               window.addEventListener( "mousemove", handleMousemove, false );
+               drawGridLines();
+
+               function handleMousemove( event ) {
+                       var viewportX = event.clientX;
+                       var viewportY = event.clientY;
+                       // Get the viewport dimensions.
+                       var viewportWidth = document.documentElement.clientWidth;
+                       var viewportHeight = document.documentElement.clientHeight;
+
+                       var edgeTop = edgeSize;
+                       var edgeLeft = edgeSize;
+                       var edgeBottom = ( viewportHeight - edgeSize );
+                       var edgeRight = ( viewportWidth - edgeSize );
+
+                       var isInLeftEdge = ( viewportX < edgeLeft );
+                       var isInRightEdge = ( viewportX > edgeRight );
+                       var isInTopEdge = ( viewportY < edgeTop );
+                       var isInBottomEdge = ( viewportY > edgeBottom );
+
+                       if ( ! ( isInLeftEdge || isInRightEdge || isInTopEdge || isInBottomEdge ) ) {
+                               clearTimeout( timer );
+                               return;
+                       }
+
+                       var documentWidth = Math.max(
+                               document.body.scrollWidth,
+                               document.body.offsetWidth,
+                               document.body.clientWidth,
+                               document.documentElement.scrollWidth,
+                               document.documentElement.offsetWidth,
+                               document.documentElement.clientWidth
+                       );
+                       var documentHeight = Math.max(
+                               document.body.scrollHeight,
+                               document.body.offsetHeight,
+                               document.body.clientHeight,
+                               document.documentElement.scrollHeight,
+                               document.documentElement.offsetHeight,
+                               document.documentElement.clientHeight
+                       );
+
+
+                       var maxScrollX = ( documentWidth - viewportWidth );
+                       var maxScrollY = ( documentHeight - viewportHeight );
+
+                       (function checkForWindowScroll() {
+                               clearTimeout( timer );
+                               if ( adjustWindowScroll() ) {
+                                      timer = setTimeout( checkForWindowScroll, 30 );
+                               }
+                       })();
+
+                       function adjustWindowScroll() {
+                               var currentScrollX = window.pageXOffset;
+                               var currentScrollY = window.pageYOffset;
+
+                               var canScrollUp = ( currentScrollY > 0 );
+                               var canScrollDown = ( currentScrollY < maxScrollY );
+                               var canScrollLeft = ( currentScrollX > 0 );
+                               var canScrollRight = ( currentScrollX < maxScrollX );
+
+                               var nextScrollX = currentScrollX;
+                               var nextScrollY = currentScrollY;
+
+                               var maxStep = 50;
+
+                               if ( isInLeftEdge && canScrollLeft ) {
+                                      var intensity = ( ( edgeLeft - viewportX ) / edgeSize );
+                                      nextScrollX = ( nextScrollX - ( maxStep * intensity ) );
+                               } else if ( isInRightEdge && canScrollRight ) {
+                                      var intensity = ( ( viewportX - edgeRight ) / edgeSize );
+                                      nextScrollX = ( nextScrollX + ( maxStep * intensity ) );
+                               }
+                               if ( isInTopEdge && canScrollUp ) {
+                                      var intensity = ( ( edgeTop - viewportY ) / edgeSize );
+                                      nextScrollY = ( nextScrollY - ( maxStep * intensity ) );
+                               } else if ( isInBottomEdge && canScrollDown ) {
+                                      var intensity = ( ( viewportY - edgeBottom ) / edgeSize );
+                                      nextScrollY = ( nextScrollY + ( maxStep * intensity ) );
+                               }
+                               // Sanitize invalid maximums. An invalid scroll offset won't break the
+                               // subsequent .scrollTo() call; however, it will make it harder to
+                               // determine if the .scrollTo() method should have been called in the
+                               // first place.
+                               nextScrollX = Math.max( 0, Math.min( maxScrollX, nextScrollX ) );
+                               nextScrollY = Math.max( 0, Math.min( maxScrollY, nextScrollY ) );
+                               if (
+                                      ( nextScrollX !== currentScrollX ) ||
+                                      ( nextScrollY !== currentScrollY )
+                                      ) {
+                                      window.scrollTo( nextScrollX, nextScrollY );
+                                      return( true );
+                               } else {
+                                      return( false );
+                               }
+                       }
+               }
+               // I draw the grid and edge lines in the document so that it is clear where
+               // scrolling will be initiated and with what intensity it is taking place.
+               function drawGridLines() {
+	                   var increment = 100;
+                       var incrementCount = 100;
+                       var maxDimension = ( increment * incrementCount );
+                       // Draw the boxes that make up the grid.
+                       for ( var x = 0 ; x < incrementCount ; x++ ) {
+
+                               for ( var y = 0 ; y < incrementCount ; y++ ) {
+	                                  var xOffset = ( x * increment );
+                                      var yOffset = ( y * increment );
+                                      var box = document.createElement( "span" );
+                                      box.style.position = "absolute";
+                                      box.style.top = ( yOffset + "px" );
+                                      box.style.left = ( xOffset + "px" );
+                                      box.style.height = ( increment + "px" );
+                                      box.style.width = ( increment + "px" );
+                                      box.style.border = "1px solid #CCCCCC";
+                                      box.style.font = "11px sans-serif";
+                                      box.style.color = "#999999" ;
+                                      box.style.boxSizing = "border-box";
+                                      box.style.padding = "5px 5px 5px 5px";
+                                      box.innerText = ( xOffset + ", " + yOffset );
+                                      document.body.appendChild( box );
+                               }
+                       }
+                       var edge = document.createElement( "span" );
+                       edge.style.position = "fixed";
+                       edge.style.top = ( edgeSize + "px" );
+                       edge.style.bottom = ( edgeSize + "px" );
+                       edge.style.left = ( edgeSize + "px" );
+                       edge.style.right = ( edgeSize + "px" );
+                       edge.style.border = "2px solid #CC0000";
+                       edge.style.borderRadius = "5px 5px 5px 5px";
+                       document.body.appendChild( edge );
+
+                       var guard = document.createElement( "div" );
+                       guard.style.position = "fixed";
+                       guard.style.top = "0px";
+                       guard.style.bottom = "0px";
+                       guard.style.left = "0px";
+                       guard.style.right = "0px";
+                       document.body.appendChild( guard );
+               }
+        </script>
+</body>
+</html>

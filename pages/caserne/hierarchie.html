@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ficheCS.css">
+	<title>FOYER</title>
+</head>
+<body>
+	<header class="container">
+		<a href="/pages/chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
+		<h1 onclick='home()'> Hiérarchie </h1>
+		<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
+	</header>
+	<nav class="container" id="tabContainer">
+		<button class="tabButton" type="button" onclick="tab(event)" name="BSP">BSP</button>
+		<button class="tabButton" type="button" onclick="tab(event)" name="Fiches ReteX">Fiches ReteX</button>
+		<button class="tabButton" type="button" onclick="tab(event)" name="La Caserne">La Caserne</button>
+		<button class="tabButton" type="button" onclick="tab(event)" name="La Radio">La Radio</button>
+	</nav>
+	<div class="fiche_caserne">
+		<section class = "texte_fiche">
+			<h2>La hiérarchie au sein de la caserne </h2>
+
+			<p> <h3> Le CDU </h3>
+				Le CDU est le capitaine qui dirige une compagnie. Il travaille en général dans le PC de la compagnie.   
+			<br>
+
+			<h3> L'OGC </h3>
+				L’OGC (officier de garde compagnie) peut être un adjudant-chef comme un capitaine. Il se trouve en PC et décale sur certaines interventions, en secours à victime comme en incendie. S’il te rejoint sur une intervention dont tu es le COS, tu dois lui faire un compte-rendu oral de l’intervention; il sera là pour te guider ou éventuellement prendre le COS.
+			<br>
+
+			<h3> Le chef de garde </h3>
+			Le Chef de garde peut être un sergent jusqu’à un lieutenant, tant qu’il a la qualification UV2. Il y en a un par CS et il est chargé de l’organisation globale de la journée.
+			<br>
+
+			<h3>Le Sergent de jour</h3>
+			Le Sergent de jour peut être un sergent comme un caporal-chef. Il s’occupe de toute la logistique des différents événements qui rythment la garde. En tant que CA VSAV, le SdJ est ton meilleur ami. N’hésite pas à l’appeler si tu as besoin de conseils sur un message à passer ou une conduite à tenir sur intervention. Aussi, si tu décales sur une intervention particulière qui nécessite une remontée d’information (enfant blessé UA, policier ou militaire blessé, agression par arme blanche / arme à feu…), il faut lui rendre compte par un appel rapide.
+			<br>
+
+			<h3>Le Caporal de jour</h3>
+			Le Caporal de jour supplée le Sergent de jour dans sa tâche. C’est à lui qu’il faut s’adresser si tu as des demandes d’ordre logistique (avoir des draps…).
+			</p>
+
+		</section>
+		<figure>
+			<img class='photo_fiche' src="/resources/images/capitaine.jpg" style='width:40vw;height:auto'>
+			<title> La remise </title>
+		</figure>
+	</div>
+	<footer>
+		<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+		<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+		<p id='signature' onclick='chicAlaJone()'> Créé par les X21 BSPP </p>
+	</footer>
+</body>
+<script src="../../scripts/main.js" charset="utf-8"></script>
+</html>

@@ -48,43 +48,22 @@ div[name="remise"]{
 .card{
 	position:absolute;
 	width: 200px;
-	height: 300px;
+	min-height: 100px;
 	padding: 0;
+	padding-bottom: 1em;
 	margin: 0;
 	background: #060c21;
 	display: none;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-}
-.card:before,
-.card:after{
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	right: -2px;
-	bottom: -2px;
-	background: white;
-	z-index: -1;
-	background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
-}
-.card:after{
-	filter: blur(40px);
-}
-.card .glass{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	font-family: sans-serif;
 }
 .card .content{
 	padding: 0;
 	margin: 0;
 	color: white;
-	/* font-family: Impact, sans-serif; */
 	text-align: center;
 	justify-content: center;
 	align-items: center;

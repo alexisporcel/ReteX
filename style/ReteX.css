@@ -1,0 +1,36 @@
+#radioTabContainer{
+	height: 10vh;
+	margin-top: 15vh;
+	margin-bottom: 20vh;
+}
+.radioTabButton{
+    background: linear-gradient(45deg, rgb(68, 114, 196), rgb(0, 51, 153));
+}
+.radioTabButton:active {
+    background: linear-gradient(45deg, rgb(0, 51, 153), rgb(68, 114, 196));
+}
+.title2{
+	position: relative;
+	top: -7vh;
+	width: 100vw;
+	text-align: center;
+	font-family : Impact, sans-serif ;
+	font-size: 2em;
+	color: rgb(0, 51, 153);
+}
+h2{
+	margin: 0;
+	padding: 0;
+}
+.content{
+	position: relative;
+	/* display: flex; */
+	/* flex-direction: row; */
+	justify-content: space-evenly;
+	margin-bottom: 10vh;
+	width: 60vw;
+	left: 20vw;
+}
+.content p{
+	font-family : Impact, sans-serif ;
+}
