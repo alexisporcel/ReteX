@@ -1,3 +1,5 @@
+// ToDo : proposer de contacter l'aspirant précédent en fonction de la caserne depuis laquelle l'utilisateur est localisé.  
+
 var x = document.getElementById("location");
 var y = document.getElementById("locationButton")
 

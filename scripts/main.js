@@ -65,8 +65,8 @@ function init(){
 
 function submit(){
 	mdp = document.getElementsByClassName('Password')[0].value
-	if (sha1(mdp) != '8758d713a95837b1599c17749ac7f43602725681'){logout()}
 	if (sha1(mdp) == '8758d713a95837b1599c17749ac7f43602725681'){login()}
+	else {logout()}
 }
 
 function logout(){

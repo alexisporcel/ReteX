@@ -1,9 +1,11 @@
-
 hr{
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: black;
+}
+.container-grid{
+	margin-bottom: 10vh;
 }
 .glossary{
 	padding: 5vh 5vh;
