@@ -64,6 +64,8 @@ if (page == 'ajouterAdmin.html') {
 
 	if (window.sessionStorage['user'] != 'ceab54db38071d0a79eec809fb07d2c953163e4c'){window.location.assign('/index.html')}
 	else {
+		document.getElementById('cos_link').style.display='block'
+
 		var alreadyFocused = false
 		function focusTextArea(){
 			if (!alreadyFocused) {
@@ -131,5 +133,22 @@ if (page == 'ajouterAdmin.html') {
 			let body = 'titre : ' + title + '  //  contenu : ' + content
 			window.open(`mailto:clement.patrizio@gmail.com?subject=${subject}&body=${body}`);
 		}
+		document.addEventListener('mousemove', function(e) {
+			let card = document.getElementsByClassName('card')[1];
+			lastMouseXpos = e.x
+			lastMouseYpos = e.y
+			let top = e.y + window.scrollY - 130;
+			let left = e.x + window.scrollX - 230;
+			card.style.top = top + 'px';
+			card.style.left = left + 'px';
+		});
+		document.addEventListener('scroll',function(e) {
+			let card = document.getElementsByClassName('card')[1];
+			let infocard = card.getBoundingClientRect();
+			let top = lastMouseYpos + window.scrollY - 130;
+			let left = lastMouseXpos + window.scrollX - 230;
+			card.style.top = top + 'px';
+			card.style.left = left + 'px';
+		})
 	}
 }
