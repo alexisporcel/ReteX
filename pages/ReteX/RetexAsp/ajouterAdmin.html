@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/resources/logo/logoBSPP.png">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/ReteX.css">
+	<title>Fiches ReteX</title>
+</head>
+<body>
+<header class="container">
+	<a href="./chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
+	<div class='title'><h1 onclick='home()'>Fiches ReteX</h1></div>
+	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
+</header>
+
+<div class='title2' style='transform: translate(0, 5vh);'>
+	<textarea name='textareaTitle2' row='0' onclick="document.getElementsByName('textareaTitle2')[0].innerHTML=''">Titre ici</textarea>
+</div>
+
+<div class="content">
+	<!-- <textarea name='textarea' rows='10' onclick="document.getElementsByName('textarea')[0].innerHTML='';document.getElementsByName('textarea')[0].style.color='black'">Ajouter <p style='font-style:"italic"'>du texte</p> ici</textarea> -->
+	<div class="textarea" contenteditable="true" onclick="focusTextArea()" spellcheck=false>Ajouter du texte ici</div>
+	<img class='photoFiche' src="" id='photoFiche'>
+</div>
+
+<img id='pinceau' class='styleAdmin' src="/resources/logo/pinceau.png" onclick="document.getElementsByName('cardStyle')[0].style.display='block'">
+<img id='addImage' class='styleAdmin' src="/resources/logo/addImage.png" onclick="document.getElementById('imagePicker').click();">
+<input type="file" id="imagePicker" style="display: none;" accept='image/*' onchange="PreviewImage()">
+<img id='savePage' class='styleAdmin' src="/resources/logo/save.png" onclick="savePage()">
+
+<div class='style card' name='cardStyle'>
+	<h3>Mise en forme du texte</h3>
+	<div class="style font">
+		<div class='style' name='underline' style='text-decoration: underline;' onclick="changeStyle(this)">S</div>
+		<div class='style' name='bold' style='font-weight: bold;' onclick="changeStyle(this)">G</div>
+		<div class='style' name='italic' style='font-style: italic;' onclick="changeStyle(this)">I</div>
+	</div>
+	<div class="styleColor">
+		<input type="color" class="styleColorpicker" value="#FF0000">
+	</div>
+</div>
+
+<footer>
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+	<p id='signature' onclick='chicAlaJone()'> Créé par les X21 BSPP </p>
+</footer>
+
+</body>
+<script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/ReteX.js" charset="utf-8"></script>
+</html>
+
+<!-- l'écoute, l'adaptabilité à son interlocuteur, l'empathie, la communication -->

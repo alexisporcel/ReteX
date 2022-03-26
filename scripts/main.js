@@ -65,17 +65,20 @@ function init(){
 
 function submit(){
 	mdp = document.getElementsByClassName('Password')[0].value
-	if (sha1(mdp) == '8758d713a95837b1599c17749ac7f43602725681'){login()}
+	if (sha1(mdp) == '8758d713a95837b1599c17749ac7f43602725681'){login('normal')}
+	else if (sha1(mdp) == 'ce5a11da0c835b7c33b55d2fc9e13acf0ee5a89a') {login('ceab54db38071d0a79eec809fb07d2c953163e4c')}
 	else {logout()}
 }
 
 function logout(){
 	sessionStorage.setItem('auth', 'false');
+	sessionStorage.setItem('user', 'normal')
 	window.location.assign('/index.html')
 }
 
-function login(){
+function login(type){
 	sessionStorage.setItem('auth', 'true');
+	sessionStorage.setItem('user', type)
 	window.location.assign('/main.html')
 }
 

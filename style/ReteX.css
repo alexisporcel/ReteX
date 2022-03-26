@@ -34,3 +34,122 @@ h2{
 .content p{
 	font-family : Impact, sans-serif ;
 }
+#addAdmin{
+	display: none;
+}
+#cos_link{
+	display: none;
+}
+#cos_img{
+	position: fixed;
+	width: 5vw;
+	right: 2vw;
+	bottom: 5vw;
+}
+.card{
+	position:absolute;
+	top: 50vh;
+	left: 10vw;
+	width: 200px;
+	min-height: 100px;
+	padding: 0;
+	padding-bottom: 1em;
+	margin: 0;
+	background: #060c21;
+	display: none;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	font-family: sans-serif;
+}
+.card h3{
+	color: white
+}
+.card p{
+	color: white;
+	margin: 0 6%
+}
+.card div{
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+
+/* #############  AjouterAdmin ############# */
+.title2 textarea{
+	outline: none !important;
+	padding: 2%;
+	background: var(--main-bg-color);
+	text-align: center;
+	font-family: Impact, sans-serif;
+	font-size: 2em;
+	color: rgb(0, 51, 153);
+	border-width: 0;
+	overflow: hidden;
+	height: auto;
+	resize: none;
+	border-radius: 10px;
+}
+.title2 textarea:focus{
+	resize: auto;
+	outline: none !important;
+	border:1px solid black;
+    box-shadow: 0 0 10px #696969;
+}
+.content{
+	display: flex;
+	width: 70vw;
+	left: 15vw;
+}
+.content .textarea{
+	width: 100%;
+	height: 70vh;
+	/* display: flex; */
+	padding: 2%;
+	background: var(--main-bg-color);
+	font-family: Impact, sans-serif;
+	font-size: 1em;
+	color: #696969;
+	border:1px solid;
+	border-radius: 10px;
+	resize: both;
+}
+.content .textarea:focus{
+	outline: none !important;
+	border:1px solid;
+    box-shadow: 0 0 10px #696969;
+	resize: both;
+}
+.content .textarea p{
+	margin:0 3px;
+}
+.content .photoFiche{
+	height: 15em;
+	width: auto;
+	margin-left: 2vw;
+}
+
+.styleAdmin{
+	position: fixed;
+	left: 5vw;
+	height: 3em;
+	width: 3em;
+	cursor: pointer;
+}
+#pinceau{
+	top: 50vh;
+}
+#addImage{
+	top: 62vh;
+}
+#savePage{
+	top: 74vh;
+}
+.styleColor{
+	margin-top: 10%
+}
+.styleColorpicker{
+	cursor: pointer;
+}
