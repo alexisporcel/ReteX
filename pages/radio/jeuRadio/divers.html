@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/resources/logo/logoBSPP.png">
+	<link rel="stylesheet" type="text/css" href="/style/main.css">
+	<link rel="stylesheet" type="text/css" href="/style/La_Radio.css">
+	<title>Jeu Radio</title>
+</head>
+<body>
+<header class="container">
+	<a href="/pages/chicAlaJone.html"> <img id="logoX" src="/resources/logo/logoX.png"></a>
+	<div class='title'><h1 onclick='home()'>Jeu Radio</h1></div>
+	<a href="https://portail.pompiersparis.fr/"> <img id="logoX" src="/resources/logo/logoBSPP.png"></a>
+</header>
+
+<div class='title2'><h2 name='radio/jeuRadio' onclick='tab(event)' style='cursor: pointer;margin-top:5vh' >Services de voirie</h2></div>
+
+<div class='content'>
+	<div class='messages'>
+		<div class='message'>
+			<p>Situation : Tu es l’aspirant Blanc du VSAV 465 de Champerret. Tu portes secours au 4 avenue du colonel bonnet à un homme en scooter qui a glissé sur une flaque d'huile fuyant du réservoir d'une remorque. <br>Message de demande de moyen :</p>
+			<div class='message-holder'></div>
+		</div>
+		<div class='message'>
+			<p>La police est arrivée à 00h03. Tu as bien balisé la zone avec des barrières du mobilier urbain. Après un coup de fil au SDJ, l'huile ne présente pas de risque inflammable. Tu laisses sur place le monsieur et son scooter sur ordre de la coordination médicale. Les services de voirie ne sont pas encore arrivés. Tu laisses la fin de la mission à la police. <br>Message de renseignement :</p>
+			<div class='message-holder'></div>
+		</div>
+	</div>
+	<div class='labelsAndButtons'>
+		<div class='labels'>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Golf X</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>De l'aspirant Blanc</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au sans numéro Rue Singer</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Au 4 avenue du Colonel Bonnet</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Accès sans numéro Rue Singer</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Je demande</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un moyen élévateur aérien</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>un bras élévateur aérien</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>une échelle pivotante automatique à nacelle</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>pour brancardage</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Secours à</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>1 femme urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>1 femme victime d'un traumatisme des membres</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Brancardage effectué</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Assurons transport non médicalisé d'1 femme urgence relative</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Vers hôpital Bichat</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Reconnaissance terminée</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Opération terminée</div>
+			<div class='label' draggable="true" onclick="autoDrag(event)" onmouseover="showExplanation(event)" onmouseout="hideExplanation(event)" parent='labels'>Reconnaissance et opération terminée</div>
+		</div>
+		<button name="reset" onclick='location.reload()'>Reset</button>
+		<button name="correc" onclick='correc()'>Correction</button>
+	</div>
+	<div class='correctionBox'>
+		<p style='color: green'>Voici la correction du message :</p><p> <br> Golf 3 de l'aspirant Blanc, Je demande Police et services de voirie au sans numéro esplanade du général Casso pour un accident de la circulation impliquant un cyclomotoriste seul. Bilan provisoire, une urgence relative. Reconnaissance en cours. <br><br><br><br> Golf 3 de l'aspirant Blanc, Bilan définitif une urgence relative laissée sur place. Périmètre de sécurité établi laissé à disposition de la police présentée à 3. Services de voirie non présentés. Reconnaissance et opération terminée. </p>
+	</div>
+	<div class='correctionExplanation'>
+		<p>Test</p>
+	</div>
+</div>
+<footer>
+	<p id='contact' onclick='sendMail()'>Envie de contribuer à ReteX ?<br>Contacte-nous ! </p>
+	<button id='homebutton' class='tabButton' onclick="home()">Retourner à la page d'accueil</button>
+	<p id='signature' onclick='chicAlaJone()'> Créé par les X21 BSPP </p>
+</footer>
+</body>
+<script src="/scripts/main.js" charset="utf-8"></script>
+<script src="/scripts/La_Radio.js" charset="utf-8"></script>
+</html>

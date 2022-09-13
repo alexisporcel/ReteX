@@ -1,27 +1,34 @@
+
 function tab(event) {
-	// NE PAS EFFACER LES LIGNES EN COMMENTAIRE
-	// var path = window.location.pathname;
-	// var page = path.split('/').pop();
-	// if (page=='index.html') {window.location.assign(`./pages/${event.target.name}.html`)}
-	// else{
-	// 	if (path.includes('caserne')) {window.location.assign(`../${event.target.name}.html`)}
-	// 	else {window.location.assign(`./${event.target.name}.html`)}
-	// }
-	console.log(event.target, event.target["name"]);
-	if (String(event.target.name) != 'undefined') {window.location.assign(`/pages/${event.target.name}.html`)}
-	else {window.location.assign(`/pages/${event.target.getAttribute('name')}.html`)}
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (path.slice(0,3) == '/C:') {
+		if (page=='main.html') {window.location.assign(`./pages/${event.target.name}.html`)}
+		else{
+			if (path.includes('caserne')) {window.location.assign(`../${event.target.name}.html`)}
+			else {window.location.assign(`./${event.target.name}.html`)}
+		}
+	}
+	else {
+		console.log(event.target, event.target["name"]);
+		if (String(event.target.name) != 'undefined') {window.location.assign(`/pages/${event.target.name}.html`)}
+		else {window.location.assign(`/pages/${event.target.getAttribute('name')}.html`)}
+	}
 }
 
 function home(){
-	// NE PAS EFFACER LES LIGNES EN COMMENTAIRE
-	// var path = window.location.pathname;
-	// var page = path.split('/').pop();
-	// if (page=='index.html') {window.location.assign(`/index.html`)}
-	// else {
-	// 	if (path.includes('caserne')) {window.location.assign(`/index.html`)}
-	// 	else {window.location.assign(`../index.html`)}
-	// }
-	window.location.assign(`/main.html`)
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (path.slice(0,3) == '/C:') {
+		if (page=='main.html') {window.location.assign(`/main.html`)}
+		else {
+			if (path.includes('caserne')) {window.location.assign(`/main.html`)}
+			else {window.location.assign(`../main.html`)}
+		}
+	}
+	else{
+		window.location.assign(`/main.html`)
+	}
 }
 
 function sendMail(){
@@ -31,15 +38,17 @@ function sendMail(){
 }
 
 function chicAlaJone(){
-	// NE PAS EFFACER LES LIGNES EN COMMENTAIRE
-	// var path = window.location.pathname;
-	// var page = path.split('/').pop();
-	// if (page=='index.html') {window.location.assign(`./pages/chicAlaJone.html`)}
-	// else {
-	// 	if (path.includes('caserne')) {window.location.assign(`.././chicAlaJone.html`)}
-	// 	else {window.location.assign(`./chicAlaJone.html`)}
-	// }
-	window.location.assign(`/pages/chicAlaJone.html`)
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (path.slice(0,3) == '/C:') {
+		if (page=='index.html') {window.location.assign(`./pages/chicAlaJone.html`)}
+		else {
+			if (path.includes('caserne')) {window.location.assign(`.././chicAlaJone.html`)}
+			else {window.location.assign(`./chicAlaJone.html`)}
+		}
+	}
+	else {window.location.assign(`/pages/chicAlaJone.html`)}
+
 }
 
 // ####################################### Login Form ##########################################################
@@ -73,13 +82,19 @@ function submit(){
 function logout(){
 	sessionStorage.setItem('auth', 'false');
 	sessionStorage.setItem('user', 'normal')
-	window.location.assign('/index.html')
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (path.slice(0,3) == '/C:') {window.location.assign(path.slice(0, -10)+'main.html')}
+	else {window.location.assign('/main.html')}
 }
 
 function login(type){
 	sessionStorage.setItem('auth', 'true');
 	sessionStorage.setItem('user', type)
-	window.location.assign('/main.html')
+	var path = window.location.pathname;
+	var page = path.split('/').pop();
+	if (path.slice(0,3) == '/C:') {window.location.assign(path.slice(0, -10)+'main.html')}
+	else {window.location.assign('/main.html')}
 }
 
 function showPassword() {

@@ -76,6 +76,13 @@ h2{
 	justify-content: space-evenly;
 	cursor: pointer;
 }
+.card .style-sgi{
+	padding: 6%;
+	border-radius: 10px;
+}
+.card .style-sgi:active{
+	background-color: #1a223d;
+}
 
 /* #############  AjouterAdmin ############# */
 .title2 textarea{
